@@ -3,54 +3,26 @@
 	<head>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 	
-	<style>
-		.header{ text-align:center; }
-		.print { display:none; }
-		.web { display:inline; }
-		.cols td { width:400px; }
-		.head {
-			text-align:center;
-			font-size:1.5em;
-		}
-		.container .content {
-			display: none;
-			padding : 5px;
-		}
-	
-	
-	@media print{
-		.container .content {
-			display: inline;
-			padding : 5px;
-		}
-		.header { display:none; }
-		@page {
-			size:8.5in 11in
-		}
-		.print {
-			display:inline;
-		}
-		.web {
-			display:none;
-		}
-	}
-	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	
 	<div class="head">
 		Charles Rymal
 	</div>
 	
+	<div class="note">
+	<span class="note-title">Note:</span> Click the section titles to expand/collapse each section.
+	</div></br>
 	
 	<div>
 		<h1>Objective</h1>
-		To obtain an internship in the computer science field in order to apply and enhance knowledge gained through my passion for computer science.
+		<span class="CS">To obtain a position in the computer science field in order to apply and enhance knowledge gained through my passion for computer science.</span></br>
+		<span class="ME">To obtain a position in the field of mechanical engineering.</span>
 	</div>
 	
 	<!-- Personal Projects -->
 	<div class="container">
-		<h1>Personal Projects</h1>
-		<div class="header">expand</div>
+		<h1 class="title_header">Personal Projects</h1>
 		<div class="content">
 			<a class="web" href="http://www.github.com/chuck1">github</a>
 			<span class="print">http://www.github.com/chuck1</span>
@@ -59,14 +31,14 @@
 	
 	<!-- Technical Skills -->
 	<div class="container">
-		<h1>Technical Skills</h1>
-		<div class="header">expand</div>
+		<h1 class="title_header">Technical Skills</h1>
+		<!--<div class="header">expand</div>-->
 		<div class="content">
-			<table>
-				<tr>
+			<table class="borders">
+				<tr class="CS">
 					<td>languages</td><td>C/C++, Python, MatLab, x86 assembly, Java, VBA, HTML, Javascript, PHP, SQL, TCL</td>
 				</tr>
-				<tr>
+				<tr class="CS">
 					<td>applications</td><td>vim, Microsoft Visual Studio, Eclipse + ADT plugin, Microsoft Office</td>
 				</tr>
 				<tr>
@@ -78,8 +50,7 @@
 	
 	<!-- Education -->
 	<div class="container">
-		<h1>Education</h1>
-		<div class="header">expand</div>
+		<h1 class="title_header">Education</h1>
 		<div class="content">
 			<table class="cols">
 				<tr>
@@ -109,9 +80,9 @@
 	</div>
 	
 	<!-- Employment -->
-	<div class="container">
-		<h1>Employment</h1>
-		<div class="header">expand</div>
+	<!-- page-break-inside property not working in Chrome, use manual page break instead -->
+	<div class="container" style="page-break-before: always">
+		<h1 class="title_header">Employment</h1>
 		<div class="content">
 			<table class="cols">
 				<tr>
@@ -139,8 +110,7 @@
 	
 	<!-- Graduate Research Project -->
 	<div class="container">
-		<h1>Graduate Research Project</h1>
-		<div class="header">expand</div>
+		<h1 class="title_header">Graduate Research Project</h1>
 		<div class="content">
 		Numerical Design of a High-Flux Microchannel Solar Receiver</br>
 		Worked with faculty and other students to design solar receivers in a project funded by the DOE SunShot Initiative. Performed numerical simulations of heat transfer and fluid flow using commercial software. Used C, Java, Python, Bash scripts, Make, and Tcl for automation, customization, and data-analysis of numerical simulations.
@@ -161,6 +131,18 @@
 					//change text based on condition
 					return $content.is(":visible") ? "collapse" : "expand";
 				});
+			});
+
+		});
+		$(".title_header").click(function () {
+
+			$header = $(this);
+			//getting the next element
+			$content = $header.next();
+			//open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+			$content.slideToggle(100, function () {
+				//execute this after slideToggle is done
+				//do nothing
 			});
 
 		});

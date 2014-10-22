@@ -1,0 +1,54 @@
+.header{ text-align:center; }
+		
+.print { display:none; }
+.web { display:inline; }
+.cols td { width:400px; }
+
+div.note {
+    background-color: #eee;
+    border: 1px solid #ccc;
+	float: left;
+}
+.note-title {
+	font-weight:bold;
+}
+
+.head {
+	text-align:center;
+	font-size:1.5em;
+}
+.container .content {
+	display: none;
+	padding: 5px;
+}
+h1 {
+	font-size:1.5em
+}
+body {
+	margin-left: 0.5in;
+}
+table.borders, table.borders td {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+table.borders td {
+	padding: 5px;
+}
+
+@media print{
+	.container .content {
+		display: inline;
+		padding: 5px;
+		page-break-inside: avoid;
+	}
+	.header { display:none; }
+	@page {
+		size:8.5in 11in
+	}
+	.print {
+		display:inline;
+	}
+	.web {
+		display:none;
+	}
+}
