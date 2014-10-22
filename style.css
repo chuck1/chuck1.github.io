@@ -1,8 +1,18 @@
 .header{ text-align:center; }
-		
+
 .print { display:none; }
 .web { display:inline; }
-.cols td { width:400px; }
+
+
+.CS { display:inline; }
+.CS-block { display:auto;}
+
+.ME { display:none; }
+.ME-block { display:none; }
+
+.cols td {
+	width:400px;
+}
 
 div.note {
     background-color: #eee;
@@ -18,14 +28,19 @@ div.note {
 	font-size:1.5em;
 }
 .container .content {
-	display: none;
+	display: inline;
 	padding: 5px;
 }
 h1 {
 	font-size:1.5em
 }
+h2 {
+	font-size:1.17em;
+	margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
 body {
-	margin-left: 0.5in;
+	margin: 0.5in;
 }
 table.borders, table.borders td {
 	border: 1px solid;
@@ -35,15 +50,20 @@ table.borders td {
 	padding: 5px;
 }
 
+
 @media print{
 	.container .content {
 		display: inline;
 		padding: 5px;
 		page-break-inside: avoid;
 	}
+	div.note { display:none; }
 	.header { display:none; }
 	@page {
 		size:8.5in 11in
+	}
+	body {
+		margin:0.5in
 	}
 	.print {
 		display:inline;
