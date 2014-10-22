@@ -1,0 +1,170 @@
+
+<html>
+	<head>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	
+	<style>
+	.header{ text-align:center; }
+	.print { display:none; }
+	.web { display:inline; }
+	.cols td { width:400px; }
+	
+	
+	
+	.container .content {
+		display: none;
+		padding : 5px;
+	}
+	
+	
+	@media print{
+		.container .content {
+			display: inline;
+			padding : 5px;
+		}
+		.header { display:none; }
+		@page {
+			size:8.5in 11in
+		}
+		.print {
+			display:inline;
+		}
+		.web {
+			display:none;
+		}
+	}
+	</style>
+	</head>
+	
+	<div class="head">
+		Charles Rymal
+	</div>
+	
+	
+	<div>
+		<h1>Objective</h1>
+		To obtain an internship in the computer science field in order to apply and enhance knowledge gained through my passion for computer science.
+	</div>
+	
+	<!-- Personal Projects -->
+	<div class="container">
+		<h1>Personal Projects</h1>
+		<div class="header">expand</div>
+		<div class="content">
+			<a class="web" href="http://www.github.com/chuck1">github</a>
+			<span class="print">http://www.github.com/chuck1</span>
+		</div>
+	</div>
+	
+	<!-- Technical Skills -->
+	<div class="container">
+		<h1>Technical Skills</h1>
+		<div class="header">expand</div>
+		<div class="content">
+			<table>
+				<tr>
+					<td>languages</td><td>C/C++, Python, MatLab, x86 assembly, Java, VBA, HTML, Javascript, PHP, SQL, TCL</td>
+				</tr>
+				<tr>
+					<td>applications</td><td>vim, Microsoft Visual Studio, Eclipse + ADT plugin, Microsoft Office</td>
+				</tr>
+				<tr>
+					<td>systems</td><td>Microsoft Windows, Red Hat, Ubuntu, Debian</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<!-- Education -->
+	<div class="container">
+		<h1>Education</h1>
+		<div class="header">expand</div>
+		<div class="content">
+			<table class="cols">
+				<tr>
+					<td>Bachelor of Science in Mechanical Engineering</td><td></td>
+				</tr>
+				<tr>
+					<td>Magna Cum Laude</td><td></td>
+				</tr>
+				<tr>
+					<td>Oregon State University</td><td>Corvallis, Oregon</td>
+				</tr>
+				<tr>
+					<td>Graduation Date: March 2012</td><td>GPA: 3.78</td>
+				</tr>
+				<tr><td></br></td></tr>
+				<tr>
+					<td>Master of Science in Mechanical Engineering</td><td></td>
+				</tr>
+				<tr>
+					<td>Oregon State University</td><td>Corvallis, Oregon</td>
+				</tr>
+				<tr>
+					<td>Graduation Date: November 2014</td><td>3.91</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<!-- Employment -->
+	<div class="container">
+		<h1>Employment</h1>
+		<div class="header">expand</div>
+		<div class="content">
+			<table class="cols">
+				<tr>
+					<td>Allied Systems Company</td><td>March 2011 to September 2011</td>
+				</tr>
+				<tr>
+					<td>MECOP Intern</td><td></td>
+				</tr>
+				<tr>
+					<td colspan="2">Managed several plant-wide manufacturing engineering projects with significant benefit for the company. Designed various tooling, particularly welding fixtures, with consideration for ease of use and manufacturability. Worked extensively with design engineers, manufacturing engineers, machinists, welders, and many others.</td>
+				</tr>
+				<tr><td></br></td></tr>
+				<tr>
+					<td>ATI Wah Chang</td><td>March 2010 to September 2010</td>
+				</tr>
+				<tr>
+					<td>MECOP Intern</td><td></td>
+				</tr>
+				<tr>
+					<td colspan="2">Designed material handling equipment for various applications. Performed stress analysis calculations as well as FEA analysis on equipment designs. Designed creative mechanical solutions to issues with existing machinery. Worked with area operators, supervisors, mechanical engineers, and outside fabrication contractors.</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<!-- Graduate Research Project -->
+	<div class="container">
+		<h1>Graduate Research Project</h1>
+		<div class="header">expand</div>
+		<div class="content">
+		Numerical Design of a High-Flux Microchannel Solar Receiver</br>
+		Worked with faculty and other students to design solar receivers in a project funded by the DOE SunShot Initiative. Performed numerical simulations of heat transfer and fluid flow using commercial software. Used C, Java, Python, Bash scripts, Make, and Tcl for automation, customization, and data-analysis of numerical simulations.
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		$(".header").click(function () {
+
+			$header = $(this);
+			//getting the next element
+			$content = $header.next();
+			//open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+			$content.slideToggle(100, function () {
+				//execute this after slideToggle is done
+				//change text of header based on visibility of content div
+				$header.text(function () {
+					//change text based on condition
+					return $content.is(":visible") ? "collapse" : "expand";
+				});
+			});
+
+		});
+	</script>
+	
+</html>
+
+
