@@ -3,7 +3,6 @@
 .print { display:none; }
 .web { display:inline; }
 
-
 .CS { display:inline; }
 .CS-block { display:auto;}
 
@@ -41,6 +40,7 @@ h2 {
 }
 body {
 	margin: 0.5in;
+	width: 800px;
 }
 table.borders, table.borders td {
 	border: 1px solid;
@@ -51,7 +51,7 @@ table.borders td {
 }
 
 
-@media print{
+@media print {
 	.container .content {
 		display: inline;
 		padding: 5px;
