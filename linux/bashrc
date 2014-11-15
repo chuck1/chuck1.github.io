@@ -1,4 +1,9 @@
 
+alias ll='ls -l'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
 export CPATH=/usr/include:$HOME/usr/include:$HOME/Programming/C++/external/PhysX/Include
 
 
