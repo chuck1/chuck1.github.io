@@ -11,9 +11,6 @@ cd ..
 
 cd nebula-engine/nebula
 git status
-git add --all
-git commit -m 'auto'
-git push origin master
 cd ../..
 
 cd python
