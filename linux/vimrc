@@ -1,12 +1,21 @@
 
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
 
-map <F1> :w <enter> :make <enter>
-map <F2> :w <enter> :make -j4 <enter>
+syntax on
+
+filetype on
+filetype plugin on
+filetype indent on
+
+map <F5> :w <enter> :make <enter>
+map <F6> :w <enter> :make -j4 <enter>
 
 :set path+=/home/chuck/git/nebula-engine/nebula/components/core/include
 :set path+=/home/chuck/git/nebula-engine/nebula/components/gfx/include
 :set path+=/home/chuck/git/nebula-engine/nebula/components/physx/include
 :set path+=/home/chuck/git/nebula-engine/nebula/components/final/include
+:set path+=/home/chuck/git/nebula-engine/nebula/components/python/include
 
 :set path+=/home/chuck/git/nebula-engine/nebula/external/Galaxy/components/std/include
 :set path+=/home/chuck/git/nebula-engine/nebula/external/Galaxy/components/console/include
