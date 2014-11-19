@@ -4,7 +4,7 @@ cd
 
 apt-get build-dep glfw
 
-apt-get install g++ doxygen graphviz 
+apt-get install g++ doxygen graphviz sqlite3
 
 apt-get install python-numpy python3-numpy python-django python-jinja2 python-scipy python-matplotlib python3-matplotlib python-qt4 python3-pyqt4
 
