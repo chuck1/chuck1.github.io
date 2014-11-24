@@ -15,6 +15,8 @@ apt-get install libboost-system1.55-dev libboost-thread1.55-dev libboost-seriali
 
 apt-get install apache2 php5
 
+apt-get install dhcp3-server tftpd-hpa syslinux nfs-kernel-server initramfs-tools
+
 # apache
 
 a2enmod cgi
