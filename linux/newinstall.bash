@@ -13,7 +13,7 @@ apt-get install libxi-dev libxcursor-dev libglew-dev libpng12-dev libfreetype6-d
 
 apt-get install libboost-system1.55-dev libboost-thread1.55-dev libboost-serialization1.55-dev
 
-apt-get install apache2 php5
+apt-get install apache2 apache2-dev php5
 
 apt-get install dhcp3-server tftpd-hpa syslinux nfs-kernel-server initramfs-tools
 
