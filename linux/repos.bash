@@ -8,6 +8,13 @@ git commit -m 'auto'
 git push origin master
 cd ..
 
+cd c-testing
+git add --all
+git commit -m 'auto'
+git push origin master
+cd ..
+
+
 cd nebula-engine/nebula
 git status
 cd ../..
