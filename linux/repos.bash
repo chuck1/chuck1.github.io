@@ -14,6 +14,12 @@ git commit -m 'auto'
 git push origin master
 cd ..
 
+cd n-body
+git add --all
+git commit -m 'auto'
+git push origin master
+cd ..
+
 
 cd nebula-engine/nebula
 git status
