@@ -1,52 +1,30 @@
 
-cd
-cd git
+function git_dirty {
+	expr $(git status --porcelain 2>/dev/null| egrep "^(M| M)" | wc -l)
+}
 
-cd chuck1.github.io
-git add --all
-git commit -m 'auto'
-git push origin master
-cd ..
+process () {
+	cd
+	cd $1
 
-cd c-testing
-git add --all
-git commit -m 'auto'
-git push origin master
-cd ..
+	echo $1
 
-cd n-body
-git add --all
-git commit -m 'auto'
-git push origin master
-cd ..
+	if [ `git_dirty` != 0 ]; then
+		echo dirty
+		git add --all
+		git commit -m 'auto'
+		git push origin master
+	else
+		echo clean
+	fi
+}
 
 
-cd nebula-engine/nebula
-git status
-cd ../..
-
-cd python
-git add --all
-git commit -m 'auto'
-git push origin master
-cd ..
-
-cd pywiki
-git add --all
-git commit -m 'auto'
-git push origin master
-cd ..
-
-cd thesis
-git add --all
-git commit -m 'auto'
-git push origin master
-cd ..
-
-cd wiki
-git add --all
-git commit -m 'auto'
-git push origin master
-cd ..
+process "git/chuck1.github.io"
+process "git/c-testing"
+process "git/n-body"
+process "git/python"
+process "git/thesis"
+process "git/wiki"
 
 
