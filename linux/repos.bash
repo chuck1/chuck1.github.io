@@ -12,7 +12,7 @@ process () {
 	if [ `git_dirty` != 0 ]; then
 		echo dirty
 		git add --all
-		git commit -m 'auto'
+		git commit 
 		git push origin master
 	else
 		echo clean
@@ -20,10 +20,10 @@ process () {
 }
 
 
-process "git/chuck1.github.io"
-process "git/c-testing"
-process "git/n-body"
-process "git/python"
+process "git/chuck1/chuck1.github.io"
+process "git/chuck1/c-testing"
+process "git/chuck1/n-body"
+process "git/chuck1/python"
 process "git/thesis"
 process "git/wiki"
 
