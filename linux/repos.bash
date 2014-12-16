@@ -3,6 +3,10 @@ function git_dirty {
 	expr $(git status --porcelain 2>/dev/null| egrep "^(M| M)" | wc -l)
 }
 
+function git_untracked {
+	expr $(git status --porcelain 2>/dev/null| grep "^??" | wc -l)
+}
+
 process () {
 	cd
 	cd $1
@@ -10,6 +14,11 @@ process () {
 	echo $1
 
 	if [ `git_dirty` != 0 ]; then
+		echo dirty
+		git add --all
+		git commit 
+		git push origin master
+	elif [ `git_untracked` != 0 ]; then 
 		echo dirty
 		git add --all
 		git commit 
