@@ -22,17 +22,20 @@ emp0.employer  = "Oregon State University"
 emp0.location = "Corvallis, OR"
 
 emp0.desc_cs = [
-"Title of research - Numerical Design of a High-Flux Microchannel Solar Receiver",
-"Worked with faculty and other students to design solar receivers in a project funded by the DOE SunShot Initiative",
-"Performed numerical simulations of heat transfer and fluid flow using commercial software",
-"Used C, Java, Python, Bash scripts, Make, and Tcl for automation, customization, and data-analysis of numerical simulations",
-]
+        "Title of research - Numerical Design of a High-Flux Microchannel Solar Receiver",
+        "Worked with faculty and other students to design microchannel solar receivers",
+        "Project was funded by the DOE SunShot Initiative",
+        "Performed numerical simulations of heat transfer and fluid flow using commercial software",
+        "Used C, Java, Python, Bash scripts, Make, and Tcl for automation, customization, and data analysis of numerical simulations",
+        ]
 
 emp0.desc_me = [
-"Title of research - Numerical Design of a High-Flux Microchannel Solar Receiver",
-"Worked with faculty and other students to design solar receivers in a project funded by the DOE SunShot Initiative",
-"Performed numerical simulations of heat transfer and fluid flow using Ansys Fluent and StarCCM+",
-]
+        "Title of research - Numerical Design of a High-Flux Microchannel Solar Receiver",
+        "Worked with faculty and other students to design microchannel solar receivers",
+        "Project was funded by the DOE SunShot Initiative",
+        "Performed numerical simulations of heat transfer and fluid flow using Ansys Fluent and StarCCM+",
+        "Assessed pressure drop, thermal efficiency, structural integrity and flow distribution",
+        ]
 
 emp1 = Emp()
 emp1.title = "MECOP Intern"
@@ -62,7 +65,7 @@ emp2.desc_cs = [
 emp2.desc_me = emp2.desc_cs
 
 
-with open("resume_1.html","w") as f:
+with open("resume.html","w") as f:
     f.write(temp.render(contact_lines=contact_lines, emp=[emp0,emp1,emp2]))
 
 
