@@ -10,7 +10,6 @@
 .ME-block {
 	display:auto;
 }
-
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 1.5in;
@@ -73,7 +72,7 @@ table.borders td {
 @media print {
 	.container .content {
 		display: inline;
-		padding: 5px;
+		padding: 0px;
 		page-break-inside: avoid;
 	}
 	div.note { display:none; }
@@ -82,7 +81,7 @@ table.borders td {
 		size:8.5in 11in
 	}
 	body {
-		margin:0.5in
+		margin:0.0in
 	}
 	.print {
 		display:inline;
