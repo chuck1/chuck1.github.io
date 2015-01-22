@@ -34,6 +34,6 @@ process "git/chuck1/c-testing"
 process "git/chuck1/n-body"
 process "git/chuck1/python"
 process "git/thesis"
-process "git/wiki"
+process "git/wiki_private"
 
 
