@@ -30,12 +30,15 @@ emp0.desc_cs = [
         ]
 
 emp0.desc_me = [
-        "Title of research - Numerical Design of a High-Flux Microchannel Solar Receiver",
-        "Worked with faculty and other students to design microchannel solar receivers",
-        "Project was funded by the DOE SunShot Initiative",
-        "Performed numerical simulations of heat transfer and fluid flow using Ansys Fluent and StarCCM+",
-        "Assessed pressure drop, thermal efficiency, structural integrity and flow distribution",
-        ]
+"Title of research - Numerical Design of a High-Flux Microchannel Solar Receiver",
+#"Project was funded by the US Dept. of Energy SunShot Initiative",
+"Worked with faculty and other students to design microchannel receivers for "
+"solar thermal power production",
+"Performed numerical simulations of heat transfer and fluid flow using "
+"commercial software: Ansys Fluent and StarCCM+",
+"Assessed pressure drop, thermal efficiency, structural integrity and flow distribution",
+"Published two conference papers for the ASME conference on Energy Sustainability",
+]
 
 emp1 = Emp()
 emp1.title = "MECOP Intern"
@@ -44,10 +47,12 @@ emp1.employer = "Allied Systems Company"
 emp1.location = "Sherwood, OR"
 
 emp1.desc_cs = [
-        "Managed several plant-wide manufacturing engineering projects with significant benefit for the company",
-        "Designed various tooling, particularly welding fixtures, with consideration for ease of use and manufacturability",
-        "Worked extensively with design engineers, manufacturing engineers, machinists, welders, and many others",
-        ]
+"Managed several plant-wide manufacturing engineering projects with significant benefit for the company",
+"Designed various tooling, particularly welding fixtures, with consideration "
+"for ease of use and manufacturability",
+"Worked extensively with design engineers, manufacturing engineers, machinists, welders, and many others",
+]
+
 emp1.desc_me = emp1.desc_cs
        
 emp2 = Emp()

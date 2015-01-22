@@ -43,7 +43,7 @@
 					<td>applications</td><td>vim, Microsoft Visual Studio, Eclipse + ADT plugin, Microsoft Office</td>
 				</tr>
 				<tr class="ME-block">
-					<td>applications</td><td>SolidWorks, AutoCAD Inventor, Ansys Fluent, StarCCM+, Microsoft Office</td>
+					<td>applications</td><td>SolidWorks, AutoCAD Inventor, Ansys Fluent, StarCCM+, LabVIEW, Microsoft Office</td>
 				</tr>
 				<tr>
 					<td>systems</td><td>Microsoft Windows, Red Hat, Ubuntu, Debian</td>
@@ -79,7 +79,10 @@
 					<td>Oregon State University</td><td>Corvallis, Oregon</td>
 				</tr>
 				<tr>
-					<td>Graduation Date: March 2012</td><td>GPA: 3.78</td>
+					<td>Start Date: September 24, 2007</td><td></td>
+				</tr>
+				<tr>
+					<td>Graduation Date: March 23, 2012</td><td>GPA: 3.78</td>
 				</tr>
 				<tr>
 					<td></br></td>
@@ -91,7 +94,10 @@
 					<td>Oregon State University</td><td>Corvallis, Oregon</td>
 				</tr>
 				<tr>
-					<td>Graduation Date: January 2015</td><td>GPA: 3.91</td>
+					<td>Start Date: April 2, 2012</td>
+				</tr>
+				<tr>
+					<td>Graduation Date: March 20, 2015</td><td>GPA: 3.91</td>
 				</tr>
 			</table>
 		</div>
