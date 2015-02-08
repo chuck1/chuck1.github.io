@@ -1,39 +1,10 @@
 
-function git_dirty {
-	expr $(git status --porcelain 2>/dev/null| egrep "^(M| M)" | wc -l)
-}
 
-function git_untracked {
-	expr $(git status --porcelain 2>/dev/null| grep "^??" | wc -l)
-}
-
-process () {
-	cd
-	cd $1
-
-	echo $1
-
-	if [ `git_dirty` != 0 ]; then
-		echo dirty
-		git add --all
-		git commit 
-		git push origin master
-	elif [ `git_untracked` != 0 ]; then 
-		echo dirty
-		git add --all
-		git commit 
-		git push origin master
-	else
-		echo clean
-	fi
-}
-
-
-process "git/chuck1/chuck1.github.io"
-process "git/chuck1/c-testing"
-process "git/chuck1/n-body"
-process "git/chuck1/python"
-process "git/thesis"
-process "git/wiki_private"
+git_process.bash "git/chuck1/chuck1.github.io"
+git_process.bash "git/chuck1/c-testing"
+git_process.bash "git/chuck1/n-body"
+git_process.bash "git/chuck1/python"
+git_process.bash "git/thesis"
+git_process.bash "git/wiki_private"
 
 
