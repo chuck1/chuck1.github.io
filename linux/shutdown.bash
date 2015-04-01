@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-repos.bash
+repos.bash push
 
-shutdown -P now
+sudo shutdown -P now
 
