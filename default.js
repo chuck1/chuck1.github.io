@@ -1,7 +1,7 @@
-function fancy_link_mouseover (obj) {
-	obj.setAttribute("class","fancy_link_mouseover");
+function mouseover (obj) {
+	//obj.setAttribute("class","link0 hover_over");
 }
-function fancy_link_mouseout (obj) {
-	obj.setAttribute("class","fancy_link");
+function mouseout (obj) {
+	//obj.setAttribute("class","link0 hover");
 }
 

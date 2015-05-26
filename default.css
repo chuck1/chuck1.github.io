@@ -1,0 +1,23 @@
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	text-align: center;
+}
+.link0 {
+	background-color: #7CC5C0;
+	transition: background-color 0.5s;
+}
+.link0:hover {
+	background-color: #7CC500;
+}
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+
+
