@@ -4,8 +4,12 @@ body {
 .center {
 	margin-left: auto;
 	margin-right: auto;
-	width: 70%;
+	width: 700px;
 	text-align: center;
+}
+.center1 {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 .link0 {
 	background-color: #7CC5C0;
