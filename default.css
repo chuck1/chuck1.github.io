@@ -4,7 +4,7 @@ body {
 .center {
 	margin-left: auto;
 	margin-right: auto;
-	width: 700px;
+	width: 800px;
 	text-align: center;
 }
 .center1 {
@@ -21,6 +21,9 @@ body {
 a {
 	text-decoration: none;
 	color: #000000;
+}
+ul {
+	text-align: left;
 }
 
 
