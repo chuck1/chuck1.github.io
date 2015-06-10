@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script src="default.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../default.css">
+	</head>
+	<body>
+		<div class="center">
+			<h1>Master of Science</h1>
+			<h2>Oreogn Statue University</h2>
+			Corvallis, OR<br><br>
+			April, 2012 - March, 2015<br><br>
+			GPA: 3.91<br><br>
+	
+			<h3>Courses</h3>
+			<ul>
+				{% for c in courses_cs %}<li>{{ c.subject }} {{ c.number }} - {{ c.desc }}</li>
+				{% endfor %}
+			</ul>
+			<ul>
+				{% for c in courses_me %}<li>{{ c.subject }} {{ c.number }} - {{ c.desc }}</li>
+				{% endfor %}
+			</ul>
+	
+		</div>
+	</body>
+</html>
+
