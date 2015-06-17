@@ -1,0 +1,15 @@
+[
+  {
+    "path":"education/bachelors/auto.html",
+    "content":"bachelor of science"
+  },
+  {
+    "path":"education/masters/auto.html",
+    "content":"master of science"
+  },
+  {
+    "path":"employment/gra/auto.html",
+    "content":"graduate research assistant"
+  }
+]
+
