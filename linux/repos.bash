@@ -22,6 +22,10 @@ then
 		git_remote.bash $loc
 	done < "$HOME/repos.txt"
 
+	for d in */ ; do
+		echo $d
+	done
+
 	exit 0
 fi
 
