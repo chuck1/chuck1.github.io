@@ -12,6 +12,11 @@ then
 		git_process.bash $loc
 	done < "$HOME/repos.txt"
 
+	for d in git/*/ ; do
+		git_process.bash $d
+		echo "$d"
+	done
+
 	exit 0
 fi
 
@@ -23,7 +28,7 @@ then
 	done < "$HOME/repos.txt"
 
 	for d in */ ; do
-		echo $d
+		git_process.bash $d
 	done
 
 	exit 0
