@@ -66,7 +66,10 @@ apt-get install \
 	python-ethtool \
 	wpasupplicant -y
 
-
+# for mingw compiling
+apt-get install \
+	gcc-mingw-w64-x86-64 \
+	libc6-dev-i386 -y
 
 
 

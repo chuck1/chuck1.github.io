@@ -1,25 +1,38 @@
+#!/usr/bin/env python
 
 import re
 
 def proc0(s):
     #p ='([^ ]+)'
     p  = '(\d+)\.(\d+)\.(\d+)\.(\d+)'
-    p += ' [^ ]+ [^ ]+ '
+    p += ' [^ ]+ ([^ ]+) '
     p += '\[(\d+/\w+/\d+)(:\d\d:\d\d:\d\d).*\] "([^"]+)" .*'
     
     m = re.match(p, s)
     if m:
+        """
         print m.group(1)
         print m.group(2)
         print m.group(3)
         print m.group(4)
         print m.group(5)
         print m.group(6)
-        return "{:>2}.{:>2}.{:>2}.{:>2}".format(
+        """
+        return "{:03}.{:03}.{:03}.{:03} {:10} {}".format(
+                int(m.group(1)),
+                int(m.group(2)),
+                int(m.group(3)),
+                int(m.group(4)),
+                m.group(5),
+                m.group(6),
+                )
+        return "{:>2}.{:>2}.{:>2}.{:>2} {}".format(
                 hex(int(m.group(1))).upper()[2:],
                 hex(int(m.group(2))).upper()[2:],
                 hex(int(m.group(3))).upper()[2:],
                 hex(int(m.group(4))).upper()[2:],
+                m.group(5),
+                m.group(6),
                 )
 
 
@@ -43,7 +56,7 @@ print len(lines1)
 
 
 for k,l in lines1:
-    print l,k
+    print "{:03} {}".format(l,k)
     pass
 
 
