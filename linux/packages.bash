@@ -53,7 +53,9 @@ apt-get install \
 	apache2-dev \
 	php5 \
 	python-django-extensions \
-	python-django-celery -y
+	python-django-celery \
+	wkhtmltopdf -y
+
 
 # for setting up nfs server?
 apt-get install dhcp3-server tftpd-hpa syslinux nfs-kernel-server initramfs-tools -y
