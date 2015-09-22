@@ -14,7 +14,7 @@ then
 	#	git_process.bash $loc
 	#done < "$HOME/repos.txt"
 
-	for d in home/git/*/ ; do
+	for d in git/*/ ; do
 		git_process.bash $d
 	done
 
@@ -28,7 +28,7 @@ then
 	#	git_remote.bash $loc
 	#done < "$HOME/repos.txt"
 
-	for d in home/git/*/ ; do
+	for d in git/*/ ; do
 		git_remote.bash $d
 	done
 

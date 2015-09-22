@@ -50,6 +50,7 @@ apt-get install \
 # for making web server
 apt-get install \
 	apache2 \
+	apache2-utils \
 	apache2-dev \
 	php5 \
 	python-django-extensions \
