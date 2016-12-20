@@ -1,0 +1,25 @@
+body {
+	font-family: "Lucida Console", Monaco, monospace;
+	margin: 0px;
+}
+
+div.title {
+	background-color: #88FFAA;
+	padding: 10px;
+}
+
+div.nav1 {
+	background-color: #88AAFF;
+	padding: 10px;
+}
+div.nav1:hover {
+	background-color: #FFFF00;
+}
+
+h1 {
+	margin: 0px;
+}
+h2 {
+	margin: 0px;
+}
+

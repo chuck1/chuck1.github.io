@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for d, link in l %}
+<a href="{{ link }}">
+	<div class="nav1">
+		<h2>{{ d }}</h2>
+	</div>
+</a>
+{% endfor %}
+{% endblock %}
+
