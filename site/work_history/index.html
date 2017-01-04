@@ -11,9 +11,20 @@
 		   	<a href="#nav" title="Show navigation">Show navigation</a>
 		        <a href="#" title="Hide navigation">Hide navigation</a>
 			<ul>
-			<li><a href="/index.html" aria-haspopup="true">/index.html</a><ul><li><a href="/work_history/index.html" aria-haspopup="true">/work_history/index.html</a><ul><li><a href="/work_history/allied_systems/index.html" >/work_history/allied_systems/index.html</a></li><li><a href="/work_history/wah_chang/index.html" >/work_history/wah_chang/index.html</a></li><li><a href="/work_history/oregon_state/index.html" >/work_history/oregon_state/index.html</a></li><li><a href="/work_history/nortek/index.html" >/work_history/nortek/index.html</a></li></ul></li></ul></li>
+			<li><a href="/index.html" aria-haspopup="true">/index.html</a><ul><li><a href="/work_history/index.html" aria-haspopup="true">/work_history/index.html</a><ul><li><a href="/work_history/allied_systems/index.html" >/work_history/allied_systems/index.html</a></li><li><a href="/work_history/oregon_state/index.html" >/work_history/oregon_state/index.html</a></li><li><a href="/work_history/nortek/index.html" >/work_history/nortek/index.html</a></li><li><a href="/work_history/wah_chang/index.html" >/work_history/wah_chang/index.html</a></li></ul></li></ul></li>
 			</ul>
 		</nav>
+
+	<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+	</div>
+	</div>	
+
+
 
 		<h1>Work History</h1>
 	</div>
@@ -23,13 +34,6 @@
 	<div class="nav1">
 		<!--<h2>allied_systems</h2>-->
 		<p>Allied Systems Company</p>
-	</div>
-</a>
-
-<a href="wah_chang/index.html">
-	<div class="nav1">
-		<!--<h2>wah_chang</h2>-->
-		<p>Wah Chang</p>
 	</div>
 </a>
 
@@ -46,6 +50,39 @@
 		<p>Nortek Air Solutions</p>
 	</div>
 </a>
+
+<a href="wah_chang/index.html">
+	<div class="nav1">
+		<!--<h2>wah_chang</h2>-->
+		<p>Wah Chang</p>
+	</div>
+</a>
+
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 
 </body>
