@@ -1,10 +1,20 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="/default.css">
+<link rel="stylesheet" type="text/css" href="/style/default.css">
+<link rel="stylesheet" type="text/css" href="/style/nav.css">
 </head>
 <title>{{ title }}</title>
 <body>
 	<div class="title">
+		
+		<nav id="nav" role="navigation">
+		   	<a href="#nav" title="Show navigation">Show navigation</a>
+		        <a href="#" title="Hide navigation">Hide navigation</a>
+			<ul>
+			{{ nav }}
+			</ul>
+		</nav>
+
 		<h1>{{ title }}</h1>
 	</div>
 	{% block content %}{% endblock %}

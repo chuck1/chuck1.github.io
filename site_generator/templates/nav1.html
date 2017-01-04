@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-{% for d, link in l %}
+{% for d, h, link, page in l %}
 <a href="{{ link }}">
 	<div class="nav1">
-		<h2>{{ d }}</h2>
+		<!--<h2>{{ d }}</h2>-->
+		{{ h }}
 	</div>
 </a>
 {% endfor %}

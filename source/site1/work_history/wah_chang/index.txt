@@ -1,0 +1,6 @@
+{
+"template":"page1",
+"title": "",
+"text_menu": "Wah Chang",
+"text": "text here"
+}
