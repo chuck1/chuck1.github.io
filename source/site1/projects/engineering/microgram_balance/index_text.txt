@@ -1,0 +1,31 @@
+
+For my [supercritical fluid project](/projects/physics/supercritical_fluid), I needed to measure dry ice with a precision of at least 0.02 grams.
+I decided to built a microgram balance using inexpensive materials, based on designs I had seen online.
+My goal was to measure out a predetermined amount of dry ice.
+
+On one end is a cup.
+On the opposite end are counterweights of unknown mass with variable positions.
+I used two counterweights whose masses were at least an order of magnitude different for course and fine control.
+The level arm for the cup was significantly longer than that of the counterweight.
+
+I hypothesize that the scale will appear to be balanced when the net torque is below some threshhold.
+The torque induced by a mass in the cup is
+
+T = m g r
+
+m = T / g / r
+
+If T is the torque threshhold, then m is the error in mass.
+In other words, if a mass of m is added to the cup of a perfectly balanced scale, the scale will not move.
+Therefore, larger r gives smaller error.
+
+
+## Procedure
+
+ * Clean and dry the cup
+ * To the cup, add the desired mass of water. The water must be measured using other means. I used a 1 mL syringe.
+ * Move the counterweights until the scale balances. It is important that the counterweights are secured so they do not move.
+ * Remove the water and clean and dry the cup. It is important that the cup is not deformed and does not change position during this step.
+ * Add material to the cup until the scale balances.
+
+

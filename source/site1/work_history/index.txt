@@ -1,6 +1,7 @@
 {
 "template":"nav1",
 "title": "Work History",
-"text_menu": "## Work History",
+"text_menu_1": "Work History",
+"text_menu_2": "Work History",
 "text": ""
 }

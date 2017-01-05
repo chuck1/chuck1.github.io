@@ -5,31 +5,22 @@
 </head>
 <title>{{ title }}</title>
 <body>
-	<div class="title">
-		
-		<nav id="nav" role="navigation">
-		   	<a href="#nav" title="Show navigation">Show navigation</a>
-		        <a href="#" title="Hide navigation">Hide navigation</a>
-			<ul>
+	<div class="header">
+		<div class="nav">
+			<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+			<div id="myDropdown" class="dropdown-content">
 			{{ nav }}
-			</ul>
-		</nav>
+			</div>
+		</div>
 
-	<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+		<div class="title">
+			<h1>{{ title }}</h1>
+		</div>
 	</div>
-	</div>	
-
-
-
-		<h1>{{ title }}</h1>
-	</div>
+	
+	<div class="content">
 	{% block content %}{% endblock %}
-
+	</div>
 
 <script>
 /* When the user clicks on the button, 

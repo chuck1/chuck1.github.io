@@ -3,15 +3,23 @@ body {
 	margin: 0px;
 }
 
-div.title {
+div.header {
 	background-color: #88FFAA;
+}
+
+div.title {
 	padding: 10px;
+}
+
+div.content {
+	padding-left: 1em;
 }
 
 div.nav1 {
 	background-color: #88AAFF;
 	padding: 10px;
 }
+
 div.nav1:hover {
 	background-color: #FFFF00;
 }

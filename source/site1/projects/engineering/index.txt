@@ -1,0 +1,6 @@
+{
+"template": "nav1",
+"title": "Physics",
+"text_menu_1": "Physics",
+"text_menu_2": "Physics"
+}

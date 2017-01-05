@@ -11,6 +11,8 @@ source_dir = "source/site1"
 
 nav = None
 
+class Nav(object): pass
+
 def source_to_web(filename):
     return os.path.join("/", os.path.splitext(filename)[0] + ".html")
 
@@ -27,16 +29,45 @@ class Page(object):
 
         self.filename = filename
 
-        self.text_html = markdown.markdown(self.data["text"])
+        self.directory = os.path.dirname(filename)
+
+
+        self.text_html = self.get_html("text")
+
         try:
-            self.text_menu_html = markdown.markdown(self.data["text_menu"])
+            self.text_menu_1_html = markdown.markdown(self.data["text_menu_1"])
         except:
-            self.text_menu_html = ""
+            self.text_menu_1_html = ""
+
+        try:
+            self.text_menu_2_html = markdown.markdown(self.data["text_menu_2"])
+        except:
+            self.text_menu_2_html = ""
+
+        
+
+
 
         dirs = list(os.walk(os.path.dirname(filename)))
         dirs = dirs[0][0:2]
         dirs2 = list(dirs_generator(dirs))
-    
+
+    def get_html(self, tag):
+        try:
+            t = self.data[tag]
+        except:
+            return ""
+        
+        print "text=",repr(t)
+        
+        if isinstance(t, dict):
+            with open(os.path.join(self.directory, t["link"]), "r") as f:
+                text = f.read()
+        else:
+            text = t
+
+        return markdown.markdown(text)
+
     def subpages(self):
         dirs = list(os.walk(os.path.dirname(self.filename)))
         dirs = dirs[0][0:2]
@@ -55,18 +86,25 @@ class Page(object):
 
         html = "<li><a href=\"{0}\" {1}>{0}</a>".format(source_to_web(self.src_relpath), a_attr)
         
+        n = Nav()
+        n.href = source_to_web(self.src_relpath)
+        n.text = self.text_menu_1_html
+
+        yield n
+        
         print self.filename
         if pages:
             html += "<ul>"
 
             for page in pages:
-                html += page.nav()
+                for n in page.nav():
+                    yield n
 
             html += "</ul>"
         
         html += "</li>"
 
-        return html
+        #return html
 
 
 def dirs_generator(walk):
@@ -88,7 +126,7 @@ def dirs_generator(walk):
         
         link = os.path.join(d, "index.html")
 
-        yield (d, page.text_menu_html, link, page)
+        yield (d, page.text_menu_2_html, link, page)
 
 def gen_page(filename):
 
@@ -130,16 +168,17 @@ def gen_page(filename):
     print "dirs:", dirs
 
     
-    text = d["text"]
+    #text = d["text"]
     
-    print "text:", repr(text)
-    text_html = repr(markdown.markdown(text))
-    print "text html:", text_html
+    #print "text:", repr(text)
+    #text_html = repr(markdown.markdown(text))
+    #print "text html:", text_html
     
     context = {
             "title": d["title"],
             "l": dirs2,
             "nav": nav,
+            "page": page,
             }
 
     html = template.render(context)
@@ -158,11 +197,20 @@ def gen_page(filename):
 
     return page
 
+def nav_html(nav):
+    
+    html = ""
+
+    for n in nav:
+        html += "<a href=\"{}\">{}</a>".format(n.href, n.text)
+
+    return html
+
 ##################################33
 
 page = Page(os.path.join(source_dir, "index.txt"))
 
-nav = page.nav()
+nav = nav_html(list(page.nav()))
 
 
 
