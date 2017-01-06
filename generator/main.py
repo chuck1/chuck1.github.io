@@ -5,7 +5,7 @@ import jinja2
 import resume
 import snipets.json_to_object
 
-env = jinja2.Environment(loader=jinja2.FileSystemLoader("site_generator/templates"))
+env = jinja2.Environment(loader=jinja2.FileSystemLoader("generator/templates"))
 
 source_dir = "source/site1"
 
@@ -86,26 +86,17 @@ class Page(object):
 
         html = "<li><a href=\"{0}\" {1}>{0}</a>".format(source_to_web(self.src_relpath), a_attr)
         
-        n = Nav()
-        n.href = source_to_web(self.src_relpath)
-        n.text = self.text_menu_1_html
+        n0 = Nav()
+        n0.href = source_to_web(self.src_relpath)
+        n0.text = self.text_menu_1_html
+        n0.children = list()
 
-        yield n
-        
-        print self.filename
         if pages:
-            html += "<ul>"
-
             for page in pages:
-                for n in page.nav():
-                    yield n
-
-            html += "</ul>"
+                n = page.nav()
+                n0.children.append(n)
         
-        html += "</li>"
-
-        #return html
-
+        return n0
 
 def dirs_generator(walk):
     d0, dirs = walk
@@ -148,7 +139,7 @@ def gen_page(filename):
     with open(src, "r") as f:
         d = json.loads(f.read())
     
-    filename_template = "site_generator/templates/" + d["template"] + ".html"
+    filename_template = "generator/templates/" + d["template"] + ".html"
     filename_template = d["template"] + ".html"
     #with open(, "r") as f:
     template = env.get_template(filename_template)
@@ -210,9 +201,8 @@ def nav_html(nav):
 
 page = Page(os.path.join(source_dir, "index.txt"))
 
-nav = nav_html(list(page.nav()))
 
-
+nav = page.nav()
 
 
 gen_page("index.txt")

@@ -1,5 +1,5 @@
 {
 "template": "nav1",
 "title": "Charles Rymal",
-"text": ""
+"text_menu_1": "Home"
 }

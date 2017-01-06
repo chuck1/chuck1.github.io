@@ -1,0 +1,77 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/style/default.css">
+<link rel="stylesheet" type="text/css" href="/style/nav.css">
+</head>
+<title>{{ title }}</title>
+<body>
+	<div class="header">
+		<div class="nav">
+			<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+			<div id="myDropdown" class="dropdown-content">
+			
+			<ul>
+				<li>
+					<a href="{{ nav.href }}">{{ nav.text }}</a>
+					<ul>
+					{% for n1 in nav.children %}
+						<li>
+							<a href="{{ n1.href }}">{{ n1.text }}</a>
+							<ul>
+							{% for n2 in n1.children %}
+								<li>
+									<a href="{{ n2.href }}">{{ n2.text }}</a>
+									<ul>
+									{% for n3 in n2.children %}
+										<li>
+											<a href="{{ n3.href }}">{{ n3.text }}</a>
+										</li>
+									{% endfor %}
+									</ul>
+								</li>
+							{% endfor %}
+							</ul>
+						</li>
+					{% endfor %}
+					</ul>
+				</li>
+			</ul>
+
+			</div>
+		</div>
+
+		<div class="title">
+			<h1>{{ title }}</h1>
+		</div>
+	</div>
+	
+	<div class="content">
+	{% block content %}{% endblock %}
+	</div>
+
+<script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	    document.getElementById("myDropdown").classList.toggle("show");
+	}
+	
+	// Close the dropdown menu if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('show')) {
+	        openDropdown.classList.remove('show');
+	      }
+	    }
+	  }
+	}
+</script>
+
+
+</body>
+</html>

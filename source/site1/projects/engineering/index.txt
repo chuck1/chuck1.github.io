@@ -1,6 +1,6 @@
 {
 "template": "nav1",
-"title": "Physics",
-"text_menu_1": "Physics",
-"text_menu_2": "Physics"
+"title": "Engineering",
+"text_menu_1": "Engineering",
+"text_menu_2": "Engineering"
 }

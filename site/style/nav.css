@@ -42,10 +42,43 @@
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #c0ffc0}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+.nav a p {
+	margin: 0em;
+}
+.nav ul {
+	margin: 0em;
+	padding: 0em;
+	list-style: none;
+}
+
+/*
+.nav ul ul {
+	background-color: #e1e1e1;
+}
+.nav ul ul ul {
+	background-color: #d1d1d1;
+}
+.nav ul ul ul ul {
+	background-color: #c1c1c1;
+}
+*/
+
+/* indenting */
+.nav ul ul p {
+	padding-left: 1.5em;
+}
+.nav ul ul ul p {
+	padding-left: 3em;
+}
+.nav ul ul ul ul p {
+	padding-left: 4.5em;
+}
+
 
 
 
