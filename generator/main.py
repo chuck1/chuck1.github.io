@@ -35,7 +35,8 @@ class Page(object):
         self.text_html = self.get_html("text")
 
         try:
-            self.text_menu_1_html = markdown.markdown(self.data["text_menu_1"])
+            #self.text_menu_1_html = markdown.markdown(self.data["text_menu_1"])
+            self.text_menu_1_html = self.data["text_menu_1"]
         except:
             self.text_menu_1_html = ""
 

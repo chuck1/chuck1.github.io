@@ -12,36 +12,39 @@
 			
 			<ul>
 				<li>
-					<a href="/index.html"><p>Home</p></a>
+					<a href="/index.html">Home</a>
 					<ul>
 					
 						<li>
-							<a href="/work/index.html"><p>Work History</p></a>
-							<ul>
+							<div>
+							<button onclick="myFunction2(this)">v</button>
+							<a href="/work/index.html">Work History</a>
+							</div>
+							<ul class="dropdown-sub">
 							
 								<li>
-									<a href="/work/allied_systems_company/index.html"><p>Allied Systems Company</p></a>
+									<a href="/work/allied_systems_company/index.html">Allied Systems Company</a>
 									<ul>
 									
 									</ul>
 								</li>
 							
 								<li>
-									<a href="/work/nortek_air_solutions/index.html"><p>Nortek Air Solutions</p></a>
+									<a href="/work/nortek_air_solutions/index.html">Nortek Air Solutions</a>
 									<ul>
 									
 									</ul>
 								</li>
 							
 								<li>
-									<a href="/work/ati_wah_chang/index.html"><p>ATI Wah Chang</p></a>
+									<a href="/work/ati_wah_chang/index.html">ATI Wah Chang</a>
 									<ul>
 									
 									</ul>
 								</li>
 							
 								<li>
-									<a href="/work/oregon_state_university/index.html"><p>Oregon State University</p></a>
+									<a href="/work/oregon_state_university/index.html">Oregon State University</a>
 									<ul>
 									
 									</ul>
@@ -51,40 +54,43 @@
 						</li>
 					
 						<li>
-							<a href="/projects/index.html"><p>Projects</p></a>
-							<ul>
+							<div>
+							<button onclick="myFunction2(this)">v</button>
+							<a href="/projects/index.html">Projects</a>
+							</div>
+							<ul class="dropdown-sub">
 							
 								<li>
-									<a href="/projects/electronics/index.html"><p>Electronics</p></a>
+									<a href="/projects/electronics/index.html">Electronics</a>
 									<ul>
 									
 									</ul>
 								</li>
 							
 								<li>
-									<a href="/projects/engineering/index.html"><p>Engineering</p></a>
+									<a href="/projects/engineering/index.html">Engineering</a>
 									<ul>
 									
 										<li>
-											<a href="/projects/engineering/microgram_balance/index.html"><p>Microgram Balance</p></a>
+											<a href="/projects/engineering/microgram_balance/index.html">Microgram Balance</a>
 										</li>
 									
 									</ul>
 								</li>
 							
 								<li>
-									<a href="/projects/physics/index.html"><p>Physics</p></a>
+									<a href="/projects/physics/index.html">Physics</a>
 									<ul>
 									
 										<li>
-											<a href="/projects/physics/supercritical_fluid/index.html"><p>Supercritical Fluid</p></a>
+											<a href="/projects/physics/supercritical_fluid/index.html">Supercritical Fluid</a>
 										</li>
 									
 									</ul>
 								</li>
 							
 								<li>
-									<a href="/projects/code/index.html"><p>Code</p></a>
+									<a href="/projects/code/index.html">Code</a>
 									<ul>
 									
 									</ul>
@@ -112,26 +118,32 @@
 	</div>
 
 <script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	    document.getElementById("myDropdown").classList.toggle("show");
+	}
+	
+	function myFunction2(element) {
+		ul = element.parentElement.getElementsByTagName('ul')[0];
+		ul.classList.toggle("show");
+	}
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+	// Close the dropdown menu if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (event.target.matches('.dropbtn')) return;
+	  if (event.target.matches('.dropdown-content button')) return;
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+	  var dropdowns = document.getElementsByClassName("dropdown-content");
+	  var i;
+	  for (i = 0; i < dropdowns.length; i++) {
+	    var openDropdown = dropdowns[i];
+	    if (openDropdown.classList.contains('show')) {
+	      openDropdown.classList.remove('show');
+	    }
+	  }
+	  
+	}
 </script>
 
 

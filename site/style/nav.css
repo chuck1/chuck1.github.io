@@ -41,11 +41,35 @@
     display: block;
 }
 
+.dropdown-content div {
+	display: block;
+}
+
+
+
+
+
+
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #c0ffc0}
 
+
+
+
+
+.dropdown-sub {
+	display: none;
+}
+
+
+
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+
+
+
+
 
 .nav a p {
 	margin: 0em;
@@ -80,6 +104,17 @@
 }
 
 
+
+
+
+/*
+.dropdown-content button {
+	float: left;
+}
+.dropdown-content a {
+	float: left;
+}
+*/
 
 
 

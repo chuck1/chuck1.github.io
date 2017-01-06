@@ -16,8 +16,11 @@
 					<ul>
 					{% for n1 in nav.children %}
 						<li>
+							<div>
+							<button onclick="myFunction2(this)">v</button>
 							<a href="{{ n1.href }}">{{ n1.text }}</a>
-							<ul>
+							</div>
+							<ul class="dropdown-sub">
 							{% for n2 in n1.children %}
 								<li>
 									<a href="{{ n2.href }}">{{ n2.text }}</a>
@@ -56,19 +59,25 @@
 	    document.getElementById("myDropdown").classList.toggle("show");
 	}
 	
+	function myFunction2(element) {
+		ul = element.parentElement.getElementsByTagName('ul')[0];
+		ul.classList.toggle("show");
+	}
+
 	// Close the dropdown menu if the user clicks outside of it
 	window.onclick = function(event) {
-	  if (!event.target.matches('.dropbtn')) {
-	
-	    var dropdowns = document.getElementsByClassName("dropdown-content");
-	    var i;
-	    for (i = 0; i < dropdowns.length; i++) {
-	      var openDropdown = dropdowns[i];
-	      if (openDropdown.classList.contains('show')) {
-	        openDropdown.classList.remove('show');
-	      }
+	  if (event.target.matches('.dropbtn')) return;
+	  if (event.target.matches('.dropdown-content button')) return;
+
+	  var dropdowns = document.getElementsByClassName("dropdown-content");
+	  var i;
+	  for (i = 0; i < dropdowns.length; i++) {
+	    var openDropdown = dropdowns[i];
+	    if (openDropdown.classList.contains('show')) {
+	      openDropdown.classList.remove('show');
 	    }
 	  }
+	  
 	}
 </script>
 
