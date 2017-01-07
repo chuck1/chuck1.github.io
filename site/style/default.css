@@ -12,13 +12,31 @@ div.title {
 	padding: 10px;
 }
 
+.title h1 {
+	margin-left: 3em;
+}
+
 div.content {
-	padding-left: 1em;
+}
+
+div.text {
+	margin: auto;
+	width: 60%;
 }
 
 div.nav1 {
+	height: 100px;
 	background-color: #88AAFF;
 	padding: 10px;
+	background-size: contain;
+
+	color: #ffffff;
+}
+a {
+	text-decoration: none;
+}
+div.nav1 h2 {
+	text-decoration: none;
 }
 
 div.nav1:hover {

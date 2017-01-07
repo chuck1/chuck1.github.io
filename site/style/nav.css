@@ -9,6 +9,7 @@
     font-size: 16px;
     border: none;
     cursor: pointer;
+    height: 57px;
 }
 
 /* Dropdown button on hover & focus */
@@ -93,24 +94,33 @@
 */
 
 /* indenting */
-.nav ul ul p {
-	padding-left: 1.5em;
-}
-.nav ul ul ul p {
+.nav ul ul a {
 	padding-left: 3em;
 }
-.nav ul ul ul ul p {
+.nav ul ul ul a {
+	padding-left: 4em;
+}
+.nav ul ul ul ul a {
 	padding-left: 4.5em;
 }
 
 
+.nav ul ul a {
+}
 
 
+.nav a {
+	white-space: nowrap;
+}
 
-/*
 .dropdown-content button {
+	border: 0px;
+	padding: 12px;
+	height: 43px;
+
 	float: left;
 }
+/*
 .dropdown-content a {
 	float: left;
 }

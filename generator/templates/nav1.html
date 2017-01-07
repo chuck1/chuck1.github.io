@@ -3,10 +3,12 @@
 {% block content %}
 {% for d, h, link, page in l %}
 <a href="{{ link }}">
-	<div class="nav1">
+	<div id="{{ page.page_id }}" class="nav1">
 		<!--<h2>{{ d }}</h2>-->
 		{{ h }}
 	</div>
+	<div id="{{ page.page_id }}" class="preloader1"></div>
+	<div id="{{ page.page_id }}" class="preloader2"></div>
 </a>
 {% endfor %}
 {% endblock %}

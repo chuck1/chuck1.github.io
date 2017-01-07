@@ -1,0 +1,19 @@
+
+
+div#page123.nav1 {
+	background-image: url('/media/image_bw.png');
+}
+div#page123.nav1:hover {
+	background-image: url('/media/image.jpg');
+}
+div#page123.preloader1 {
+	background: url('/media/image_bw.png') no-repeat -9999px -9999px;
+}
+div#page123.preloader2 {
+	background: url('/media/image.jpg') no-repeat -9999px -9999px;
+}
+
+
+
+
+

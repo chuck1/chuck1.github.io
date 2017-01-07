@@ -6,8 +6,8 @@ This experiment required five things
  * dry ice
  * small diameter borosilicate glass tube
  * propane torch
- * a way to weigh dry ice with about 0.02 gram accuracy
- * a chamber that could contain exploding glass tubes and has a window for filming
+ * a method for weighing dry ice with about 0.02 gram accuracy
+ * a chamber that could contain exploding glass tubes and had a window for filming
 
 P-T phase disgram with lines of constant volume
 

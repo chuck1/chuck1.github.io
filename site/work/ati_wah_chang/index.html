@@ -1,13 +1,14 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="/style/default.css">
-<link rel="stylesheet" type="text/css" href="/style/nav.css">
+	<link rel="stylesheet" type="text/css" href="/style/default.css">
+	<link rel="stylesheet" type="text/css" href="/style/nav.css">
+	<link rel="stylesheet" type="text/css" href="/style/bg_image.css">
 </head>
 <title>ATI Wah Chang</title>
 <body>
 	<div class="header">
 		<div class="nav">
-			<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+			<button onclick="myFunction()" class="dropbtn">Nav</button>
 			<div id="myDropdown" class="dropdown-content">
 			
 			<ul>
@@ -17,35 +18,47 @@
 					
 						<li>
 							<div>
-							<button onclick="myFunction2(this)">v</button>
-							<a href="/work/index.html">Work History</a>
+								<button onclick="myFunction2(this)">v</button>
+								<a href="/work/index.html">Work History</a>
 							</div>
 							<ul class="dropdown-sub">
 							
 								<li>
-									<a href="/work/allied_systems_company/index.html">Allied Systems Company</a>
-									<ul>
+									<div>
+										
+										<a href="/work/allied_systems_company/index.html">Allied Systems Company</a>
+									</div>
+									<ul class="dropdown-sub">
 									
 									</ul>
 								</li>
 							
 								<li>
-									<a href="/work/nortek_air_solutions/index.html">Nortek Air Solutions</a>
-									<ul>
+									<div>
+										
+										<a href="/work/nortek_air_solutions/index.html">Nortek Air Solutions</a>
+									</div>
+									<ul class="dropdown-sub">
 									
 									</ul>
 								</li>
 							
 								<li>
-									<a href="/work/ati_wah_chang/index.html">ATI Wah Chang</a>
-									<ul>
+									<div>
+										
+										<a href="/work/ati_wah_chang/index.html">ATI Wah Chang</a>
+									</div>
+									<ul class="dropdown-sub">
 									
 									</ul>
 								</li>
 							
 								<li>
-									<a href="/work/oregon_state_university/index.html">Oregon State University</a>
-									<ul>
+									<div>
+										
+										<a href="/work/oregon_state_university/index.html">Oregon State University</a>
+									</div>
+									<ul class="dropdown-sub">
 									
 									</ul>
 								</li>
@@ -55,21 +68,29 @@
 					
 						<li>
 							<div>
-							<button onclick="myFunction2(this)">v</button>
-							<a href="/projects/index.html">Projects</a>
+								<button onclick="myFunction2(this)">v</button>
+								<a href="/projects/index.html">Projects</a>
 							</div>
 							<ul class="dropdown-sub">
 							
 								<li>
-									<a href="/projects/electronics/index.html">Electronics</a>
-									<ul>
+									<div>
+										
+										<a href="/projects/electronics/index.html">Electronics</a>
+									</div>
+									<ul class="dropdown-sub">
 									
 									</ul>
 								</li>
 							
 								<li>
-									<a href="/projects/engineering/index.html">Engineering</a>
-									<ul>
+									<div>
+										
+										<button onclick="myFunction2(this)">v</button>
+										
+										<a href="/projects/engineering/index.html">Engineering</a>
+									</div>
+									<ul class="dropdown-sub">
 									
 										<li>
 											<a href="/projects/engineering/microgram_balance/index.html">Microgram Balance</a>
@@ -79,8 +100,13 @@
 								</li>
 							
 								<li>
-									<a href="/projects/physics/index.html">Physics</a>
-									<ul>
+									<div>
+										
+										<button onclick="myFunction2(this)">v</button>
+										
+										<a href="/projects/physics/index.html">Physics</a>
+									</div>
+									<ul class="dropdown-sub">
 									
 										<li>
 											<a href="/projects/physics/supercritical_fluid/index.html">Supercritical Fluid</a>
@@ -90,8 +116,11 @@
 								</li>
 							
 								<li>
-									<a href="/projects/code/index.html">Code</a>
-									<ul>
+									<div>
+										
+										<a href="/projects/code/index.html">Code</a>
+									</div>
+									<ul class="dropdown-sub">
 									
 									</ul>
 								</li>
@@ -113,10 +142,16 @@
 	
 	<div class="content">
 	
-<p>Designed material handling equipment for various applications 
-Performed stress analysis calculations as well as FEA analysis on equipment designs 
-Designed creative mechanical solutions to issues with existing machinery 
-Worked with area operators, supervisors, mechanical engineers, and outside fabrication contractors</p>
+
+<div class="text">
+	<ul>
+<li>Designed material handling equipment for various applications </li>
+<li>Performed stress analysis calculations as well as FEA analysis on equipment designs </li>
+<li>Designed creative mechanical solutions to issues with existing machinery </li>
+<li>Worked with area operators, supervisors, mechanical engineers, and outside fabrication contractors</li>
+</ul>
+</div>
+
 
 	</div>
 
@@ -128,8 +163,14 @@ Worked with area operators, supervisors, mechanical engineers, and outside fabri
 	}
 	
 	function myFunction2(element) {
-		ul = element.parentElement.getElementsByTagName('ul')[0];
+		ul = element.parentElement.parentElement.getElementsByTagName('ul')[0];
 		ul.classList.toggle("show");
+
+		if(element.innerHTML=="v"){
+			element.innerHTML="^";
+		} else {
+			element.innerHTML="v";
+		}
 	}
 
 	// Close the dropdown menu if the user clicks outside of it

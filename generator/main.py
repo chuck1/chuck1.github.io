@@ -31,8 +31,13 @@ class Page(object):
 
         self.directory = os.path.dirname(filename)
 
-
         self.text_html = self.get_html("text")
+
+        try:
+            #self.text_menu_1_html = markdown.markdown(self.data["text_menu_1"])
+            self.page_id = self.data["page_id"]
+        except:
+            self.page_id = ""
 
         try:
             #self.text_menu_1_html = markdown.markdown(self.data["text_menu_1"])
@@ -45,7 +50,7 @@ class Page(object):
         except:
             self.text_menu_2_html = ""
 
-        
+    
 
 
 

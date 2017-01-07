@@ -1,13 +1,14 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="/style/default.css">
-<link rel="stylesheet" type="text/css" href="/style/nav.css">
+	<link rel="stylesheet" type="text/css" href="/style/default.css">
+	<link rel="stylesheet" type="text/css" href="/style/nav.css">
+	<link rel="stylesheet" type="text/css" href="/style/bg_image.css">
 </head>
 <title>Supercritical Fluid</title>
 <body>
 	<div class="header">
 		<div class="nav">
-			<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+			<button onclick="myFunction()" class="dropbtn">Nav</button>
 			<div id="myDropdown" class="dropdown-content">
 			
 			<ul>
@@ -17,35 +18,47 @@
 					
 						<li>
 							<div>
-							<button onclick="myFunction2(this)">v</button>
-							<a href="/work/index.html">Work History</a>
+								<button onclick="myFunction2(this)">v</button>
+								<a href="/work/index.html">Work History</a>
 							</div>
 							<ul class="dropdown-sub">
 							
 								<li>
-									<a href="/work/allied_systems_company/index.html">Allied Systems Company</a>
-									<ul>
+									<div>
+										
+										<a href="/work/allied_systems_company/index.html">Allied Systems Company</a>
+									</div>
+									<ul class="dropdown-sub">
 									
 									</ul>
 								</li>
 							
 								<li>
-									<a href="/work/nortek_air_solutions/index.html">Nortek Air Solutions</a>
-									<ul>
+									<div>
+										
+										<a href="/work/nortek_air_solutions/index.html">Nortek Air Solutions</a>
+									</div>
+									<ul class="dropdown-sub">
 									
 									</ul>
 								</li>
 							
 								<li>
-									<a href="/work/ati_wah_chang/index.html">ATI Wah Chang</a>
-									<ul>
+									<div>
+										
+										<a href="/work/ati_wah_chang/index.html">ATI Wah Chang</a>
+									</div>
+									<ul class="dropdown-sub">
 									
 									</ul>
 								</li>
 							
 								<li>
-									<a href="/work/oregon_state_university/index.html">Oregon State University</a>
-									<ul>
+									<div>
+										
+										<a href="/work/oregon_state_university/index.html">Oregon State University</a>
+									</div>
+									<ul class="dropdown-sub">
 									
 									</ul>
 								</li>
@@ -55,21 +68,29 @@
 					
 						<li>
 							<div>
-							<button onclick="myFunction2(this)">v</button>
-							<a href="/projects/index.html">Projects</a>
+								<button onclick="myFunction2(this)">v</button>
+								<a href="/projects/index.html">Projects</a>
 							</div>
 							<ul class="dropdown-sub">
 							
 								<li>
-									<a href="/projects/electronics/index.html">Electronics</a>
-									<ul>
+									<div>
+										
+										<a href="/projects/electronics/index.html">Electronics</a>
+									</div>
+									<ul class="dropdown-sub">
 									
 									</ul>
 								</li>
 							
 								<li>
-									<a href="/projects/engineering/index.html">Engineering</a>
-									<ul>
+									<div>
+										
+										<button onclick="myFunction2(this)">v</button>
+										
+										<a href="/projects/engineering/index.html">Engineering</a>
+									</div>
+									<ul class="dropdown-sub">
 									
 										<li>
 											<a href="/projects/engineering/microgram_balance/index.html">Microgram Balance</a>
@@ -79,8 +100,13 @@
 								</li>
 							
 								<li>
-									<a href="/projects/physics/index.html">Physics</a>
-									<ul>
+									<div>
+										
+										<button onclick="myFunction2(this)">v</button>
+										
+										<a href="/projects/physics/index.html">Physics</a>
+									</div>
+									<ul class="dropdown-sub">
 									
 										<li>
 											<a href="/projects/physics/supercritical_fluid/index.html">Supercritical Fluid</a>
@@ -90,8 +116,11 @@
 								</li>
 							
 								<li>
-									<a href="/projects/code/index.html">Code</a>
-									<ul>
+									<div>
+										
+										<a href="/projects/code/index.html">Code</a>
+									</div>
+									<ul class="dropdown-sub">
 									
 									</ul>
 								</li>
@@ -113,17 +142,21 @@
 	
 	<div class="content">
 	
-<p>After watching Cody from the YouTube channel Cody's Lab <a href="https://www.youtube.com/watch?v=4Z-KbcLs-yo">make supercritical CO2 in a glass tube</a>, I was excited to replicate his experiment.
+
+<div class="text">
+	<p>After watching Cody from the YouTube channel Cody's Lab <a href="https://www.youtube.com/watch?v=4Z-KbcLs-yo">make supercritical CO2 in a glass tube</a>, I was excited to replicate his experiment.
 I am fascinated by supercritical fluids and I thought it was cool that this experiment would be very inexpensive.</p>
 <p>This experiment required five things</p>
 <ul>
 <li>dry ice</li>
 <li>small diameter borosilicate glass tube</li>
 <li>propane torch</li>
-<li>a way to weigh dry ice with about 0.02 gram accuracy</li>
-<li>a chamber that could contain exploding glass tubes and has a window for filming</li>
+<li>a method for weighing dry ice with about 0.02 gram accuracy</li>
+<li>a chamber that could contain exploding glass tubes and had a window for filming</li>
 </ul>
 <p>P-T phase disgram with lines of constant volume</p>
+</div>
+
 
 	</div>
 
@@ -135,8 +168,14 @@ I am fascinated by supercritical fluids and I thought it was cool that this expe
 	}
 	
 	function myFunction2(element) {
-		ul = element.parentElement.getElementsByTagName('ul')[0];
+		ul = element.parentElement.parentElement.getElementsByTagName('ul')[0];
 		ul.classList.toggle("show");
+
+		if(element.innerHTML=="v"){
+			element.innerHTML="^";
+		} else {
+			element.innerHTML="v";
+		}
 	}
 
 	// Close the dropdown menu if the user clicks outside of it
