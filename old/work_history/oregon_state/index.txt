@@ -1,7 +1,0 @@
-{
-"template":"page1",
-"title": "",
-"text_menu_1": "Oregon State University",
-"text_menu_2": "Oregon State University",
-"text": "text here"
-}

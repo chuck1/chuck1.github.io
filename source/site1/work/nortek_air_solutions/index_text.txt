@@ -1,5 +1,0 @@
- * Design refrigeration systems to meet performance requirements, expand.
- * Select components, create scematics.
- * 3D modeling of coils.
- * work with purchasing, manufacturing, operators.
- * Lead project to test water coils and characterize performance.

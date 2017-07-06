@@ -1,1 +1,0 @@
-{"text_menu_2": "Nortek Air Solutions", "text_menu_1": "Nortek Air Solutions", "text": {"link": "index_text.txt"}, "template": "page1", "title": "Nortek Air Solutions"}

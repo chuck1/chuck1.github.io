@@ -1,6 +1,0 @@
-{
-"template": "nav1",
-"title": "Projects",
-"text_menu_1": "Projects",
-"text_menu_2": "Projects"
-}

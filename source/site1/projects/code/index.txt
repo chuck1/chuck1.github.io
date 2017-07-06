@@ -1,6 +1,0 @@
-{
-"template": "nav1",
-"title": "Code",
-"text_menu_1": "Code",
-"text_menu_2": "Code"
-}

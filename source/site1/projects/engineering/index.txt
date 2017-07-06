@@ -1,6 +1,0 @@
-{
-"template": "nav1",
-"title": "Engineering",
-"text_menu_1": "Engineering",
-"text_menu_2": "Engineering"
-}

@@ -1,9 +1,0 @@
-graph {
-	subgraph cluster_repos {
-		label="repos";
-		nebula
-		chuck1_github_io [label="chuck1.github.io"]
-		webpage_private [shape=record; label="{webpage_private | }"]
-	}
-}
-

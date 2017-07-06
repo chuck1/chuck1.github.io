@@ -1,5 +1,0 @@
- * Title of research - Numerical Design of a High-Flux Microchannel Solar Receiver 
- * Worked with faculty and other students to design microchannel receivers for solar thermal power production 
- * Performed numerical simulations of heat transfer and fluid flow using commercial software: Ansys Fluent and StarCCM+ 
- * Assessed pressure drop, thermal efficiency, structural integrity and flow distribution 
- * Published two conference papers for the ASME conference on Energy Sustainability

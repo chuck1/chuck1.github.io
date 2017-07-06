@@ -1,7 +1,0 @@
-{
-"template": "nav1",
-"title": "Electronics",
-"text_menu_1": "Electronics",
-"text_menu_2": "## Electronics",
-"page_id": "page123"
-}

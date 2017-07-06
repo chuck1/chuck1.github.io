@@ -1,1 +1,0 @@
-{"text_menu_2": "Allied Systems Company", "text_menu_1": "Allied Systems Company", "text": {"link": "index_text.txt"}, "template": "page1", "title": "Allied Systems Company"}
