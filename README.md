@@ -2,6 +2,7 @@ Charles Rymal
 =============
 
 Projects
+--------
 
 * web sheets
   * [async_patterns](https://github.com/chuck1/async_patterns)
