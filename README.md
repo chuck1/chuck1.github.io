@@ -8,6 +8,7 @@ Projects
 
 - web sheets
   - [async_patterns](https://github.com/chuck1/async_patterns)
+    [![][async_patterns_docs_stable_img]][async_patterns_docs_stable]
     - master
       [![][async_patterns_travis_master]][async_patterns_travis]
       [![][async_patterns_codecov_master]][async_patterns_codecov]
@@ -56,6 +57,9 @@ Projects
 [async_patterns_codecov]: https://codecov.io/gh/chuck1/async_patterns
 [async_patterns_codecov_master]: https://codecov.io/gh/chuck1/async_patterns/branch/master/graph/badge.svg
 [async_patterns_codecov_dev]: https://codecov.io/gh/chuck1/async_patterns/branch/dev/graph/badge.svg
+
+[async_patterns_docs_stable]: https://async_patterns.readthedocs.io/en/stable
+[async_patterns_docs_stable_img]: https://readthedocs.org/projects/async_patterns/badge/?version=stable
 
 [codemach_travis]: https://travis-ci.org/chuck1/codemach
 [codemach_travis_master]: https://travis-ci.org/chuck1/codemach.svg?branch=master
