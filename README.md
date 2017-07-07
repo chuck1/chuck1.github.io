@@ -71,6 +71,9 @@ Projects
 [codemach_codecov_master]: https://codecov.io/gh/chuck1/codemach/branch/master/graph/badge.svg
 [codemach_codecov_dev]: https://codecov.io/gh/chuck1/codemach/branch/dev/graph/badge.svg
 
+[codemach_docs_latest]: https://codemach.readthedocs.io/en/latest
+[codemach_docs_latest_img]: https://readthedocs.org/projects/codemach/badge/?version=latest
+
 [codemach_pypi_img]: https://img.shields.io/pypi/v/codemach.svg
 [codemach_pypi]: https://pypi.python.org/pypi/codemach
 
