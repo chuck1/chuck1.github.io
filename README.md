@@ -16,6 +16,7 @@ Projects
       [![][async_patterns_travis_dev]][async_patterns_travis]
       [![][async_patterns_codecov_dev]][async_patterns_codecov]
   - [codemach](https://github.com/chuck1/codemach)
+    [![][codemach_pypi_img]][codemach_pypi]
     - master
       [![][codemach_travis_master]][codemach_travis]
       [![][codemach_codecov_master]][codemach_codecov]
@@ -69,6 +70,9 @@ Projects
 [codemach_codecov]: https://codecov.io/gh/chuck1/codemach
 [codemach_codecov_master]: https://codecov.io/gh/chuck1/codemach/branch/master/graph/badge.svg
 [codemach_codecov_dev]: https://codecov.io/gh/chuck1/codemach/branch/dev/graph/badge.svg
+
+[codemach_pypi_img]: https://img.shields.io/pypi/v/codemach.svg
+[codemach_pypi]: https://pypi.python.org/pypi/codemach
 
 [ws_storage_travis]: https://travis-ci.org/chuck1/ws_storage
 [ws_storage_travis_master]: https://travis-ci.org/chuck1/ws_storage.svg?branch=master
