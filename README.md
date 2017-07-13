@@ -24,6 +24,7 @@ Projects
       [![][codemach_travis_dev]][codemach_travis]
       [![][codemach_codecov_dev]][codemach_codecov]
   - [ws_storage](https://github.com/chuck1/ws_storage)
+    [![][ws_storage_docs_latest_img]][ws_storage_docs_latest]
     - master
       [![][ws_storage_travis_master]][ws_storage_travis]
       [![][ws_storage_codecov_master]][ws_storage_codecov]
