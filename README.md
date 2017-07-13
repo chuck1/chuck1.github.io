@@ -84,6 +84,11 @@ Projects
 [ws_storage_codecov_master]: https://codecov.io/gh/chuck1/ws_storage/branch/master/graph/badge.svg
 [ws_storage_codecov_dev]: https://codecov.io/gh/chuck1/ws_storage/branch/dev/graph/badge.svg
 
+[ws_storage_docs_stable]: https://ws_storage.readthedocs.io/en/stable
+[ws_storage_docs_stable_img]: https://readthedocs.org/projects/ws_storage/badge/?version=stable
+[ws_storage_docs_latest]: https://ws_storage.readthedocs.io/en/latest
+[ws_storage_docs_latest_img]: https://readthedocs.org/projects/ws_storage/badge/?version=latest
+
 [ws_sheets_travis]: https://travis-ci.org/chuck1/ws_sheets
 [ws_sheets_travis_master]: https://travis-ci.org/chuck1/ws_sheets.svg?branch=master
 [ws_sheets_travis_dev]: https://travis-ci.org/chuck1/ws_sheets.svg?branch=dev
