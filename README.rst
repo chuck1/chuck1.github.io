@@ -9,6 +9,10 @@ Projects
 +----------------+------------------------------+---------------------------------+------------------------------+
 |                |                              | master                          | dev                          |
 +----------------+------------------------------+---------------------------------+------------------------------+
+|modconf_        | |modconf_docs_latest|        | |modconf_travis_master|         | |modconf_travis_dev|         |
+|                |                              |                                 |                              |
+|                |                              | |modconf_codecov_master|        | |modconf_codecov_dev|        |
++----------------+------------------------------+---------------------------------+------------------------------+
 |async_patterns_ | |async_patterns_docs_latest| | |async_patterns_travis_master|  | |async_patterns_travis_dev|  |
 |                |                              |                                 |                              |
 |                |                              | |async_patterns_codecov_master| | |async_patterns_codecov_dev| |
@@ -73,5 +77,24 @@ Projects
 .. |ws_storage_codecov_dev| image:: https://codecov.io/gh/chuck1/ws_storage/branch/dev/graph/badge.svg
    :target: https://codecov.io/gh/chuck1/ws_storage
 
+.. _modconf: https://github.com/chuck1/modconf
   
+.. |modconf_docs_latest| image:: https://readthedocs.org/projects/modconf/badge/?version=latest
+   :target: https://modconf.readthedocs.io/en/latest
+  
+.. |modconf_travis_master| image:: https://travis-ci.org/chuck1/modconf.svg?branch=master
+   :target: https://travis-ci.org/chuck1/modconf
+
+.. |modconf_travis_dev| image:: https://travis-ci.org/chuck1/modconf.svg?branch=dev
+   :target: https://travis-ci.org/chuck1/modconf
+
+.. |modconf_codecov_master| image:: https://codecov.io/gh/chuck1/modconf/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/chuck1/modconf
+
+.. |modconf_codecov_dev| image:: https://codecov.io/gh/chuck1/modconf/branch/dev/graph/badge.svg
+   :target: https://codecov.io/gh/chuck1/modconf
+
+  
+
+
 
