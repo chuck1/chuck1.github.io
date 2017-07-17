@@ -14,7 +14,12 @@ Projects
 |                |                              | |async_patterns_codecov_master| | |async_patterns_codecov_dev| |
 +----------------+------------------------------+---------------------------------+------------------------------+
 |codemach_       | |codemach_docs_latest|       | |codemach_travis_master|        | |codemach_travis_dev|        |
+|                |                              |                                 |                              |
 |                |                              | |codemach_codecov_master|       | |codemach_codecov_dev|       |
++----------------+------------------------------+---------------------------------+------------------------------+
+|ws_storage_     | |ws_storage_docs_latest|     | |ws_storage_travis_master|      | |ws_storage_travis_dev|      |
+|                |                              |                                 |                              |
+|                |                              | |ws_storage_codecov_master|     | |ws_storage_codecov_dev|     |
 +----------------+------------------------------+---------------------------------+------------------------------+
 
 .. _async_patterns: https://github.com/chuck1/async_patterns
@@ -50,6 +55,23 @@ Projects
 
 .. |codemach_codecov_dev| image:: https://codecov.io/gh/chuck1/codemach/branch/dev/graph/badge.svg
    :target: https://codecov.io/gh/chuck1/codemach
+
+.. _ws_storage: https://github.com/chuck1/ws_storage
+  
+.. |ws_storage_docs_latest| image:: https://readthedocs.org/projects/ws_storage/badge/?version=latest
+   :target: https://ws_storage.readthedocs.io/en/latest
+  
+.. |ws_storage_travis_master| image:: https://travis-ci.org/chuck1/ws_storage.svg?branch=master
+   :target: https://travis-ci.org/chuck1/ws_storage
+
+.. |ws_storage_travis_dev| image:: https://travis-ci.org/chuck1/ws_storage.svg?branch=dev
+   :target: https://travis-ci.org/chuck1/ws_storage
+
+.. |ws_storage_codecov_master| image:: https://codecov.io/gh/chuck1/ws_storage/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/chuck1/ws_storage
+
+.. |ws_storage_codecov_dev| image:: https://codecov.io/gh/chuck1/ws_storage/branch/dev/graph/badge.svg
+   :target: https://codecov.io/gh/chuck1/ws_storage
 
   
 
