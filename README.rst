@@ -10,6 +10,7 @@ Projects
 |                |                              | master                          | dev                          |
 +----------------+------------------------------+---------------------------------+------------------------------+
 |async_patterns_ | |async_patterns_docs_latest| | |async_patterns_travis_master|  | |async_patterns_travis_dev|  |
+|                |                              |                                 |                              |
 |                |                              | |async_patterns_codecov_master| | |async_patterns_codecov_dev| |
 +----------------+------------------------------+---------------------------------+------------------------------+
 |codemach_       | |codemach_docs_latest|       | |codemach_travis_master|        | |codemach_travis_dev|        |
