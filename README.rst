@@ -28,5 +28,22 @@ codemach_       |codemach_docs_latest|          |codemach_travis_master|        
 .. |async_patterns_codecov_dev| image:: https://codecov.io/gh/chuck1/async_patterns/branch/dev/graph/badge.svg
    :target: https://codecov.io/gh/chuck1/async_patterns
 
+.. _codemach: https://github.com/chuck1/codemach
+  
+.. |codemach_docs_latest| image:: https://readthedocs.org/projects/codemach/badge/?version=latest
+   :target: https://codemach.readthedocs.io/en/latest
+  
+.. |codemach_travis_master| image:: https://travis-ci.org/chuck1/codemach.svg?branch=master
+   :target: https://travis-ci.org/chuck1/codemach
+
+.. |codemach_travis_dev| image:: https://travis-ci.org/chuck1/codemach.svg?branch=dev
+   :target: https://travis-ci.org/chuck1/codemach
+
+.. |codemach_codecov_master| image:: https://codecov.io/gh/chuck1/codemach/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/chuck1/codemach
+
+.. |codemach_codecov_dev| image:: https://codecov.io/gh/chuck1/codemach/branch/dev/graph/badge.svg
+   :target: https://codecov.io/gh/chuck1/codemach
+
   
 
