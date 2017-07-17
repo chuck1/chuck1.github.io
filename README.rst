@@ -6,15 +6,23 @@ https://github.com/chuck1/chuck1.github.io
 Projects
 --------
 
-- web sheets
-  - [async_patterns](https://github.com/chuck1/async_patterns)
-    [![][async_patterns_docs_latest_img]][async_patterns_docs_latest]
-    - master
+=============== ============================
+async_patterns_ |async_patterns_docs_latest|
+=============== ============================
+  
+.. _async_patterns: https://github.com/chuck1/async_patterns
+  
+  .. |async_patterns_docs_latest| image:: https://readthedocs.org/projects/async_patterns/badge/?version=latest
+     :target: https://async_patterns.readthedocs.io/en/latest
+  
+  
+  - master
       [![][async_patterns_travis_master]][async_patterns_travis]
       [![][async_patterns_codecov_master]][async_patterns_codecov]
-    - dev
+  - dev
       [![][async_patterns_travis_dev]][async_patterns_travis]
       [![][async_patterns_codecov_dev]][async_patterns_codecov]
+  
   - [codemach](https://github.com/chuck1/codemach)
     [![][codemach_pypi_img]][codemach_pypi]
     - master
@@ -60,8 +68,9 @@ Projects
 [async_patterns_codecov_master]: https://codecov.io/gh/chuck1/async_patterns/branch/master/graph/badge.svg
 [async_patterns_codecov_dev]: https://codecov.io/gh/chuck1/async_patterns/branch/dev/graph/badge.svg
 
-[async_patterns_docs_stable]: https://async_patterns.readthedocs.io/en/stable
-[async_patterns_docs_stable_img]: https://readthedocs.org/projects/async_patterns/badge/?version=stable
+.. _async_patterns_docs_stable: https://async_patterns.readthedocs.io/en/stable
+.. _async_patterns_docs_stable_img: https://readthedocs.org/projects/async_patterns/badge/?version=stable
+
 [async_patterns_docs_latest]: https://async_patterns.readthedocs.io/en/latest
 [async_patterns_docs_latest_img]: https://readthedocs.org/projects/async_patterns/badge/?version=latest
 
