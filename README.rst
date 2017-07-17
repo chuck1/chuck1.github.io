@@ -6,22 +6,27 @@ https://github.com/chuck1/chuck1.github.io
 Projects
 --------
 
-=============== ============================
-async_patterns_ |async_patterns_docs_latest|
-=============== ============================
+=============== ============================ ============================== =============================== =========================== ============================
+async_patterns_ |async_patterns_docs_latest| |async_patterns_travis_master| |async_patterns_codecov_master| |async_patterns_travis_dev| |async_patterns_codecov_dev|
+=============== ============================ ============================== =============================== =========================== ============================
   
 .. _async_patterns: https://github.com/chuck1/async_patterns
   
-  .. |async_patterns_docs_latest| image:: https://readthedocs.org/projects/async_patterns/badge/?version=latest
-     :target: https://async_patterns.readthedocs.io/en/latest
+.. |async_patterns_docs_latest| image:: https://readthedocs.org/projects/async_patterns/badge/?version=latest
+   :target: https://async_patterns.readthedocs.io/en/latest
   
-  
-  - master
-      [![][async_patterns_travis_master]][async_patterns_travis]
-      [![][async_patterns_codecov_master]][async_patterns_codecov]
-  - dev
-      [![][async_patterns_travis_dev]][async_patterns_travis]
-      [![][async_patterns_codecov_dev]][async_patterns_codecov]
+.. |async_patterns_travis_master| image:: https://travis-ci.org/chuck1/async_patterns.svg?branch=master
+   :target: https://travis-ci.org/chuck1/async_patterns
+
+.. |async_patterns_travis_dev| image:: https://travis-ci.org/chuck1/async_patterns.svg?branch=dev
+   :target: https://travis-ci.org/chuck1/async_patterns
+
+.. |async_patterns_codecov_master| image:: https://codecov.io/gh/chuck1/async_patterns/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/chuck1/async_patterns
+
+.. |async_patterns_codecov_dev| image:: https://codecov.io/gh/chuck1/async_patterns/branch/dev/graph/badge.svg
+   :target: https://codecov.io/gh/chuck1/async_patterns
+
   
   - [codemach](https://github.com/chuck1/codemach)
     [![][codemach_pypi_img]][codemach_pypi]
@@ -61,18 +66,6 @@ async_patterns_ |async_patterns_docs_latest|
       [![][ws_web_aiohttp_travis_dev]][ws_web_aiohttp_travis]
       [![][ws_web_aiohttp_codecov_dev]][ws_web_aiohttp_codecov]
 
-[async_patterns_travis]: https://travis-ci.org/chuck1/async_patterns
-[async_patterns_travis_master]: https://travis-ci.org/chuck1/async_patterns.svg?branch=master
-[async_patterns_travis_dev]: https://travis-ci.org/chuck1/async_patterns.svg?branch=dev
-[async_patterns_codecov]: https://codecov.io/gh/chuck1/async_patterns
-[async_patterns_codecov_master]: https://codecov.io/gh/chuck1/async_patterns/branch/master/graph/badge.svg
-[async_patterns_codecov_dev]: https://codecov.io/gh/chuck1/async_patterns/branch/dev/graph/badge.svg
-
-.. _async_patterns_docs_stable: https://async_patterns.readthedocs.io/en/stable
-.. _async_patterns_docs_stable_img: https://readthedocs.org/projects/async_patterns/badge/?version=stable
-
-[async_patterns_docs_latest]: https://async_patterns.readthedocs.io/en/latest
-[async_patterns_docs_latest_img]: https://readthedocs.org/projects/async_patterns/badge/?version=latest
 
 [codemach_travis]: https://travis-ci.org/chuck1/codemach
 [codemach_travis_master]: https://travis-ci.org/chuck1/codemach.svg?branch=master
