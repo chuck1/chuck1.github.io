@@ -6,10 +6,14 @@ https://github.com/chuck1/chuck1.github.io
 Projects
 --------
 
-=============== ============================    ==============================  =============================== ===========================     ============================
-async_patterns_ |async_patterns_docs_latest|    |async_patterns_travis_master|  |async_patterns_codecov_master| |async_patterns_travis_dev|     |async_patterns_codecov_dev|
-codemach_       |codemach_docs_latest|          |codemach_travis_master|        |codemach_codecov_master|       |codemach_travis_dev|           |codemach_codecov_dev|
-=============== ============================    ==============================  =============================== ===========================     ============================
+=============== ============================    ==============================  =============================== ============================
+                                                master
+=============== ============================    ==============================  =============================== ============================
+async_patterns_ |async_patterns_docs_latest|    |async_patterns_travis_master|  |async_patterns_travis_dev|     |async_patterns_codecov_dev|
+                                                |async_patterns_codecov_master| 
+codemach_       |codemach_docs_latest|          |codemach_travis_master|        |codemach_travis_dev|           |codemach_codecov_dev|       
+                                                |codemach_codecov_master|
+=============== ============================    ==============================  =============================== ============================
   
 .. _async_patterns: https://github.com/chuck1/async_patterns
   
