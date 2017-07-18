@@ -9,13 +9,13 @@ Projects
 +----------------+------------------------------+---------------------------------+------------------------------+
 |                |                              | master                          | dev                          |
 +----------------+------------------------------+---------------------------------+------------------------------+
-|modconf_        | |modconf_docs_latest|        | |modconf_travis_master|         | |modconf_travis_dev|         |
-|                |                              |                                 |                              |
-|                |                              | |modconf_codecov_master|        | |modconf_codecov_dev|        |
-+----------------+------------------------------+---------------------------------+------------------------------+
 |async_patterns_ | |async_patterns_docs_latest| | |async_patterns_travis_master|  | |async_patterns_travis_dev|  |
 |                |                              |                                 |                              |
 |                |                              | |async_patterns_codecov_master| | |async_patterns_codecov_dev| |
++----------------+------------------------------+---------------------------------+------------------------------+
+|modconf_        | |modconf_docs_latest|        | |modconf_travis_master|         | |modconf_travis_dev|         |
+|                |                              |                                 |                              |
+|                |                              | |modconf_codecov_master|        | |modconf_codecov_dev|        |
 +----------------+------------------------------+---------------------------------+------------------------------+
 |codemach_       | |codemach_docs_latest|       | |codemach_travis_master|        | |codemach_travis_dev|        |
 |                |                              |                                 |                              |
@@ -24,6 +24,10 @@ Projects
 |ws_storage_     | |ws_storage_docs_latest|     | |ws_storage_travis_master|      | |ws_storage_travis_dev|      |
 |                |                              |                                 |                              |
 |                |                              | |ws_storage_codecov_master|     | |ws_storage_codecov_dev|     |
++----------------+------------------------------+---------------------------------+------------------------------+
+|ws_sheets_      | |ws_sheets_docs_latest|      | |ws_sheets_travis_master|       | |ws_sheets_travis_dev|       |
+|                |                              |                                 |                              |
+|                |                              | |ws_sheets_codecov_master|      | |ws_sheets_codecov_dev|      |
 +----------------+------------------------------+---------------------------------+------------------------------+
 
 .. _async_patterns: https://github.com/chuck1/async_patterns
@@ -93,6 +97,23 @@ Projects
 
 .. |modconf_codecov_dev| image:: https://codecov.io/gh/chuck1/modconf/branch/dev/graph/badge.svg
    :target: https://codecov.io/gh/chuck1/modconf
+
+.. _ws_sheets: https://github.com/chuck1/ws_sheets
+  
+.. |ws_sheets_docs_latest| image:: https://readthedocs.org/projects/ws_sheets/badge/?version=latest
+   :target: https://ws_sheets.readthedocs.io/en/latest
+  
+.. |ws_sheets_travis_master| image:: https://travis-ci.org/chuck1/ws_sheets.svg?branch=master
+   :target: https://travis-ci.org/chuck1/ws_sheets
+
+.. |ws_sheets_travis_dev| image:: https://travis-ci.org/chuck1/ws_sheets.svg?branch=dev
+   :target: https://travis-ci.org/chuck1/ws_sheets
+
+.. |ws_sheets_codecov_master| image:: https://codecov.io/gh/chuck1/ws_sheets/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/chuck1/ws_sheets
+
+.. |ws_sheets_codecov_dev| image:: https://codecov.io/gh/chuck1/ws_sheets/branch/dev/graph/badge.svg
+   :target: https://codecov.io/gh/chuck1/ws_sheets
 
   
 
