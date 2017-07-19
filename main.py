@@ -40,6 +40,9 @@ def _gen_cols():
             '|{}_travis_dev|',
             '|{}_codecov_dev|',
             ]
+    yield [
+            '|{}_pulls|',
+            ]
 
 length = 0
 
@@ -157,6 +160,12 @@ def gen_images(repos):
                 '{}_codecov_dev',
                 'https://codecov.io/gh/chuck1/{}/branch/dev/graph/badge.svg',
                 'https://codecov.io/gh/chuck1/{}',
+                )
+        yield Image(
+                s,
+                '{}_pulls',
+                'https://img.shields.io/github/issues-pr-raw/chuck1/{}.svg',
+                'https://github.com/chuck1/{}/pulls',
                 )
 
 def gen_links(repos):
