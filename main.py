@@ -43,6 +43,7 @@ def _gen_cols():
             ]
     yield [
             '|{}_pulls|',
+            '|{}_issues|',
             ]
 
 length = 0
@@ -166,6 +167,12 @@ def gen_images(repos):
                 s,
                 '{}_pulls',
                 'https://img.shields.io/github/issues-pr-raw/chuck1/{}.svg',
+                'https://github.com/chuck1/{}/pulls',
+                )
+        yield Image(
+                s,
+                '{}_issues',
+                'https://img.shields.io/github/issues-raw/chuck1/{}.svg',
                 'https://github.com/chuck1/{}/pulls',
                 )
 
