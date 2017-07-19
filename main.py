@@ -28,7 +28,7 @@ def _gen_cols():
             '{}_',
             ]
     yield [
-            '|{}_doc_latest|',
+            '|{}_docs_latest|',
             '|{}_pypi|',
             '|{}_pypi_versions|',
             ]
@@ -124,7 +124,7 @@ def gen_images(repos):
                 )
         yield Image(
                 s,
-                '{}_pyversions',
+                '{}_pypi_versions',
                 'https://img.shields.io/pypi/pyversions/{}.svg',
                 'https://pypi.python.org/pypi/{}',
                 )

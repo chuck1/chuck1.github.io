@@ -2,49 +2,49 @@
 |                                   |                                   | master                            | dev                               | 
 |                                   |                                   |                                   |                                   | 
 +-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+
-| async_patterns_                   | |async_patterns_doc_latest|       | |async_patterns_travis_master|    | |async_patterns_travis_dev|       | 
+| async_patterns_                   | |async_patterns_docs_latest|      | |async_patterns_travis_master|    | |async_patterns_travis_dev|       | 
 |                                   |                                   |                                   |                                   | 
 |                                   | |async_patterns_pypi|             | |async_patterns_codecov_master|   | |async_patterns_codecov_dev|      | 
 |                                   |                                   |                                   |                                   | 
 |                                   | |async_patterns_pypi_versions|    |                                   |                                   | 
 |                                   |                                   |                                   |                                   | 
 +-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+
-| modconf_                          | |modconf_doc_latest|              | |modconf_travis_master|           | |modconf_travis_dev|              | 
+| modconf_                          | |modconf_docs_latest|             | |modconf_travis_master|           | |modconf_travis_dev|              | 
 |                                   |                                   |                                   |                                   | 
 |                                   | |modconf_pypi|                    | |modconf_codecov_master|          | |modconf_codecov_dev|             | 
 |                                   |                                   |                                   |                                   | 
 |                                   | |modconf_pypi_versions|           |                                   |                                   | 
 |                                   |                                   |                                   |                                   | 
 +-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+
-| codemach_                         | |codemach_doc_latest|             | |codemach_travis_master|          | |codemach_travis_dev|             | 
+| codemach_                         | |codemach_docs_latest|            | |codemach_travis_master|          | |codemach_travis_dev|             | 
 |                                   |                                   |                                   |                                   | 
 |                                   | |codemach_pypi|                   | |codemach_codecov_master|         | |codemach_codecov_dev|            | 
 |                                   |                                   |                                   |                                   | 
 |                                   | |codemach_pypi_versions|          |                                   |                                   | 
 |                                   |                                   |                                   |                                   | 
 +-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+
-| ws_storage_                       | |ws_storage_doc_latest|           | |ws_storage_travis_master|        | |ws_storage_travis_dev|           | 
+| ws_storage_                       | |ws_storage_docs_latest|          | |ws_storage_travis_master|        | |ws_storage_travis_dev|           | 
 |                                   |                                   |                                   |                                   | 
 |                                   | |ws_storage_pypi|                 | |ws_storage_codecov_master|       | |ws_storage_codecov_dev|          | 
 |                                   |                                   |                                   |                                   | 
 |                                   | |ws_storage_pypi_versions|        |                                   |                                   | 
 |                                   |                                   |                                   |                                   | 
 +-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+
-| ws_sheets_                        | |ws_sheets_doc_latest|            | |ws_sheets_travis_master|         | |ws_sheets_travis_dev|            | 
+| ws_sheets_                        | |ws_sheets_docs_latest|           | |ws_sheets_travis_master|         | |ws_sheets_travis_dev|            | 
 |                                   |                                   |                                   |                                   | 
 |                                   | |ws_sheets_pypi|                  | |ws_sheets_codecov_master|        | |ws_sheets_codecov_dev|           | 
 |                                   |                                   |                                   |                                   | 
 |                                   | |ws_sheets_pypi_versions|         |                                   |                                   | 
 |                                   |                                   |                                   |                                   | 
 +-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+
-| ws_sheets_server_                 | |ws_sheets_server_doc_latest|     | |ws_sheets_server_travis_master|  | |ws_sheets_server_travis_dev|     | 
+| ws_sheets_server_                 | |ws_sheets_server_docs_latest|    | |ws_sheets_server_travis_master|  | |ws_sheets_server_travis_dev|     | 
 |                                   |                                   |                                   |                                   | 
 |                                   | |ws_sheets_server_pypi|           | |ws_sheets_server_codecov_master| | |ws_sheets_server_codecov_dev|    | 
 |                                   |                                   |                                   |                                   | 
 |                                   | |ws_sheets_server_pypi_versions|  |                                   |                                   | 
 |                                   |                                   |                                   |                                   | 
 +-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+
-| ws_web_aiohttp_                   | |ws_web_aiohttp_doc_latest|       | |ws_web_aiohttp_travis_master|    | |ws_web_aiohttp_travis_dev|       | 
+| ws_web_aiohttp_                   | |ws_web_aiohttp_docs_latest|      | |ws_web_aiohttp_travis_master|    | |ws_web_aiohttp_travis_dev|       | 
 |                                   |                                   |                                   |                                   | 
 |                                   | |ws_web_aiohttp_pypi|             | |ws_web_aiohttp_codecov_master|   | |ws_web_aiohttp_codecov_dev|      | 
 |                                   |                                   |                                   |                                   | 
@@ -69,7 +69,7 @@
 .. |async_patterns_pypi| image:: https://img.shields.io/pypi/v/async_patterns.svg
    :target: https://pypi.python.org/pypi/async_patterns
 
-.. |async_patterns_pyversions| image:: https://img.shields.io/pypi/pyversions/async_patterns.svg
+.. |async_patterns_pypi_versions| image:: https://img.shields.io/pypi/pyversions/async_patterns.svg
    :target: https://pypi.python.org/pypi/async_patterns
 
 .. |async_patterns_docs_latest| image:: https://readthedocs.org/projects/async_patterns/badge/?version=latest
@@ -90,7 +90,7 @@
 .. |modconf_pypi| image:: https://img.shields.io/pypi/v/modconf.svg
    :target: https://pypi.python.org/pypi/modconf
 
-.. |modconf_pyversions| image:: https://img.shields.io/pypi/pyversions/modconf.svg
+.. |modconf_pypi_versions| image:: https://img.shields.io/pypi/pyversions/modconf.svg
    :target: https://pypi.python.org/pypi/modconf
 
 .. |modconf_docs_latest| image:: https://readthedocs.org/projects/modconf/badge/?version=latest
@@ -111,7 +111,7 @@
 .. |codemach_pypi| image:: https://img.shields.io/pypi/v/codemach.svg
    :target: https://pypi.python.org/pypi/codemach
 
-.. |codemach_pyversions| image:: https://img.shields.io/pypi/pyversions/codemach.svg
+.. |codemach_pypi_versions| image:: https://img.shields.io/pypi/pyversions/codemach.svg
    :target: https://pypi.python.org/pypi/codemach
 
 .. |codemach_docs_latest| image:: https://readthedocs.org/projects/codemach/badge/?version=latest
@@ -132,7 +132,7 @@
 .. |ws_storage_pypi| image:: https://img.shields.io/pypi/v/ws_storage.svg
    :target: https://pypi.python.org/pypi/ws_storage
 
-.. |ws_storage_pyversions| image:: https://img.shields.io/pypi/pyversions/ws_storage.svg
+.. |ws_storage_pypi_versions| image:: https://img.shields.io/pypi/pyversions/ws_storage.svg
    :target: https://pypi.python.org/pypi/ws_storage
 
 .. |ws_storage_docs_latest| image:: https://readthedocs.org/projects/ws_storage/badge/?version=latest
@@ -153,7 +153,7 @@
 .. |ws_sheets_pypi| image:: https://img.shields.io/pypi/v/ws_sheets.svg
    :target: https://pypi.python.org/pypi/ws_sheets
 
-.. |ws_sheets_pyversions| image:: https://img.shields.io/pypi/pyversions/ws_sheets.svg
+.. |ws_sheets_pypi_versions| image:: https://img.shields.io/pypi/pyversions/ws_sheets.svg
    :target: https://pypi.python.org/pypi/ws_sheets
 
 .. |ws_sheets_docs_latest| image:: https://readthedocs.org/projects/ws_sheets/badge/?version=latest
@@ -174,7 +174,7 @@
 .. |ws_sheets_server_pypi| image:: https://img.shields.io/pypi/v/ws_sheets_server.svg
    :target: https://pypi.python.org/pypi/ws_sheets_server
 
-.. |ws_sheets_server_pyversions| image:: https://img.shields.io/pypi/pyversions/ws_sheets_server.svg
+.. |ws_sheets_server_pypi_versions| image:: https://img.shields.io/pypi/pyversions/ws_sheets_server.svg
    :target: https://pypi.python.org/pypi/ws_sheets_server
 
 .. |ws_sheets_server_docs_latest| image:: https://readthedocs.org/projects/ws_sheets_server/badge/?version=latest
@@ -195,7 +195,7 @@
 .. |ws_web_aiohttp_pypi| image:: https://img.shields.io/pypi/v/ws_web_aiohttp.svg
    :target: https://pypi.python.org/pypi/ws_web_aiohttp
 
-.. |ws_web_aiohttp_pyversions| image:: https://img.shields.io/pypi/pyversions/ws_web_aiohttp.svg
+.. |ws_web_aiohttp_pypi_versions| image:: https://img.shields.io/pypi/pyversions/ws_web_aiohttp.svg
    :target: https://pypi.python.org/pypi/ws_web_aiohttp
 
 .. |ws_web_aiohttp_docs_latest| image:: https://readthedocs.org/projects/ws_web_aiohttp/badge/?version=latest
