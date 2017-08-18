@@ -168,9 +168,9 @@ $$
 
 '''Hypothesis''' If x is not on the subspace, s will be the parameter for the projection of x onto the subspace.
 
-# N-Space Cross Product
+# Determinant of a matrix
 
-We start with the following formula for the determinant of an NxN matrix.
+The determinant of an NxN matrix is
 
 $$
 \mathrm{det}(A) = \sum_{\sigma \in S_n} \mathrm{sgn}(\sigma) \prod_{i=1}^n a_{i,\sigma_{i}}
@@ -179,21 +179,5 @@ $$
 $$
 \mathrm{det}(A) = \sum_{\sigma \in S_{n}} \mathrm{sgn}(\sigma) a_{1,\sigma_{1}} \prod_{i=2}^n a_{i,\sigma_{i}}
 $$
-
-If the first row of the matrix is composed of the unit vectors of N-Space
-
-$$
-a_{1,i} = \mathbf{e}_i
-$$
-
-then we can write
-
-$$
-\mathrm{det}(A) = \sum_{\sigma \in S_n} \mathrm{sgn}(\sigma) \mathbf{e}_{\sigma_1} \prod_{i=2}^n a_{i,\sigma_{i}}
-$$
-
-the question is, if A is constructed with the unit vectors forming the first row and n-1 row n-vectors forming the remaining rows, does the determinant and the formula above give the cross product of the n-1 n-vectors.
-Where the cross product is a vector that is linearly independent of all n-1 of the input vectors if the input vectors themselves are all linearly independent?
-
 
 
