@@ -5,7 +5,7 @@ title: Voronoi Clip
 
 # Collision Detection
 
-Use an n-dimensional V-Clip algorithm.
+Use an n-dimensional V-Clip algorithm [1][vclip].
 
 For generalization of the VClip algorithm, we must generalize some of the algorithms for all orders of feature.
 However, there are always exceptions.
@@ -179,5 +179,6 @@ $$
 \frac{d}{d\mathbf{s}}D = \mathbf{A}^T \mathbf{\hat{n}}
 $$
 
+[vclip]: /pages/literature/articles/59974f93714c602a23b3651d.html
 
 
