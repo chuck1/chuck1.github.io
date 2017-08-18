@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 ---
 
 == Theorems ==
@@ -34,10 +34,10 @@ Fun fact, for any odd numbered fully connected graph of size $n$, you can write 
 These cycles will list each edge in the graph exactly once.
 This of course, will only work for odd graphs.
 
-graph SomeGraph {
-0--1--2--3--4--0
-0--2--4--1--3--0
-}
+    graph SomeGraph {
+    0--1--2--3--4--0
+    0--2--4--1--3--0
+    }
 
 === length of cycles in fully connected graph ===
 
@@ -58,26 +58,24 @@ $$
 This algorithm uses temporary orienting of edges.
 The stack is a ordered list of edges to which one can add and remove edges from either end.
 
-{{{
-function cycles(v0)
-    for each edge e connected to v0 and not in the stack
-        v1 is the other vertex of e
-        orient e and put in on the bottom of the stack
-
-        if v1 has not been used as the starting vertex yet
-            if the first and last vertices in e are equal
-                save the stack as a cycle
-            else
-                call cycles(v1)
-
-        pop e from the bottom of the stack
-
-for each vertex v
-    begin with an empty stack
-    call cycles(v)
-}}}
-
+    function cycles(v0)
+        for each edge e connected to v0 and not in the stack
+            v1 is the other vertex of e
+            orient e and put in on the bottom of the stack
+    
+            if v1 has not been used as the starting vertex yet
+                if the first and last vertices in e are equal
+                    save the stack as a cycle
+                else
+                    call cycles(v1)
+    
+            pop e from the bottom of the stack
+    
+    for each vertex v
+        begin with an empty stack
+        call cycles(v)
+    
 I believe this will identify all cycles of a particular definition but I do not have a proof.
-Calling {{{cycles(v)}}} can find all cycles containing the vertex {{{v}}}.
-So from the outer iteration, where we call {{{cycles}}} for each vertex in the graph, we can ignore cycles in subsequent calls
-that would contain any vertex that has already been used as the starting vertex of {{{cycles}}}.
+Calling *cycles(v)* can find all cycles containing the vertex *v*.
+So from the outer iteration, where we call *cycles* for each vertex in the graph, we can ignore cycles in subsequent calls
+that would contain any vertex that has already been used as the starting vertex of *cycles*.

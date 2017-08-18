@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 ---
 
  * [[/CyclesInUndirectedGraph]]
@@ -89,19 +89,16 @@ And I see no reason that we cannot do this for both vertices and edges, even tho
 
 Here we define a function that will serve as a recursive component of $F$ using a depth-first-search algorithm.
 
-{{{
-
-function g(v)
-  for each edge e adjacent to v
-    if the stack contains e then continue
-    push e onto to stack
-
-    if the stack is a valid solution
-      save the stack as a solution
-
-    if we should descend
-      g(vertex opposite v in e)
-
-    pop e from the stack
-
-}}}
+    function g(v)
+      for each edge e adjacent to v
+        if the stack contains e then continue
+        push e onto to stack
+    
+        if the stack is a valid solution
+          save the stack as a solution
+    
+        if we should descend
+          g(vertex opposite v in e)
+    
+        pop e from the stack
+    
