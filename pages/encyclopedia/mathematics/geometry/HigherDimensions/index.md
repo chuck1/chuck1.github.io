@@ -10,42 +10,42 @@ So here is an attempt at generalizing this requirement. in N dimensions, an K di
 
 == Rotations ==
 
-Rotate a vector <math>\mathbf{v}</math> by rotor <math>\mathbf{r}</math>. A rotor is an arbitrary sum of even-grade terms.
+Rotate a vector <math>\mathbf{v}$$ by rotor <math>\mathbf{r}</math>. A rotor is an arbitrary sum of even-grade terms.
 
-{{{#!html
+
 $$
 \mathbf{v}' = \mathbf{\tilde{r}}\mathbf{v}\mathbf{r}
 $$
-}}}
+
 
 Example in three dimensions
 
-{{{#!html
+
 $$
 \mathbf{v}' = (r_0 - r_{1,2} \mathbf{e}_1 \mathbf{e}_2 - r_{1,3} \mathbf{e}_1 \mathbf{e}_3 - r_{2,3} \mathbf{e}_2 \mathbf{e}_3)(v_1 \mathbf{e}_1 + v_2 \mathbf{e}_2 + v_3 \mathbf{e}_3)
 (r_0 + r_{1,2} \mathbf{e}_1 \mathbf{e}_2 + r_{1,3} \mathbf{e}_1 \mathbf{e}_3 + r_{2,3} \mathbf{e}_2 \mathbf{e}_3)
 $$
-}}}
+
 
 If you distribute the above, the trivector terms cancel, leaving only the vector terms. If you collect the vectors terms, you can construct a rotation matrix and see that it is identical to construction using quaternions.
 
-The only requirement for <math>r</math> is
+The only requirement for <math>r$$ is
 
-{{{#!html
+
 $$
 \mathrm{gorm}(\mathbf{r})=1
 $$
-}}}
+
 
 where
 
-{{{#!html
+
 $$
 \mathrm{gorm}(\mathbf{r}) \equiv \langle \mathbf{\tilde{r}}\mathbf{r} \rangle_0
 $$
-}}}
 
-Note that the number of terms in the rotation equation before simplification is <math>n^2 2^{(n-1)}</math>. So the computational cost increases quickly with <math>n</math>.
+
+Note that the number of terms in the rotation equation before simplification is <math>n^2 2^{(n-1)}$$. So the computational cost increases quickly with <math>n</math>.
 
 = Linear Algebra =
 
@@ -53,18 +53,19 @@ Note that the number of terms in the rotation equation before simplification is 
 
 A k-dimensional subspace will at first be defined by the intersection of (n-k) hyperplanes.
 
-<math>\mathbf{n}_i \cdot \mathbf{x} = d_i</math>
+<math>\mathbf{n}_i \cdot \mathbf{x} = d_i$$
 
 or
 
-<math>\mathbf{B} \mathbf{x} = \mathbf{d}</math>
+<math>\mathbf{B} \mathbf{x} = \mathbf{d}$$
 
 We want to convert this to the form
 
-<math> \mathbf{x} = \mathbf{p} + \mathbf{A} \mathbf{s} </math>
+$$
+\mathbf{x} = \mathbf{p} + \mathbf{A} \mathbf{s} $$
 
-The columns of <math>\mathbf{A}</math> are orthogonal basis vectors for the subspace.
-I do not yet know how to determine <math>\mathbf{A}</math>.
+The columns of <math>\mathbf{A}$$ are orthogonal basis vectors for the subspace.
+I do not yet know how to determine <math>\mathbf{A}$$.
 Keywords to research are
 
 * Nullspace
@@ -76,82 +77,110 @@ Keywords to research are
 
 The ray is defined by
 
-<math>\mathbf{x} = \mathbf{p}_0 + k \mathbf{v}</math>
+<math>\mathbf{x} = \mathbf{p}_0 + k \mathbf{v}$$
 
 The plane is defined by
 
-<math>\mathbf{n} \cdot \mathbf{x} = d</math>.
+<math>\mathbf{n} \cdot \mathbf{x} = d$$.
 
 Combining these gives
 
-<math>
+$$
 \mathbf{n} \cdot (\mathbf{p}_0 + k \mathbf{v}) = d
-</math>
+$$
 
-<math>
+$$
 \mathbf{n} \cdot \mathbf{p}_0 + \mathbf{n} \cdot (k \mathbf{v}) = d
-</math>
+$$
 
-<math>
+$$
 k = \frac{d - \mathbf{n} \cdot \mathbf{p}_0}{\mathbf{n} \cdot \mathbf{v}}
-</math>
+$$
 
-Note that if <math>\mathbf{n} \cdot \mathbf{v}=0</math>, the ray is parallel to the plane and there is not point of intersection.
+Note that if <math>\mathbf{n} \cdot \mathbf{v}=0$$, the ray is parallel to the plane and there is not point of intersection.
 
 == Intersection of Subspace and Hyperplane ==
 
 A subspace can be parameterized as
 
-<math> \mathbf{x} = \mathbf{p} + \mathbf{A} \mathbf{s} </math>
+$$
+\mathbf{x} = \mathbf{p} + \mathbf{A} \mathbf{s} $$
 
 A sided hyperplane inequality is given by
 
-<math> \mathbf{n} \cdot \mathbf{x} < \mathbf{d} </math>
+$$
+\mathbf{n} \cdot \mathbf{x} < \mathbf{d} $$
 
 Combine to get
 
-<math> \mathbf{n} \cdot (\mathbf{p} + \mathbf{A} \mathbf{s}) < d </math>
+$$
+\mathbf{n} \cdot (\mathbf{p} + \mathbf{A} \mathbf{s}) < d
+$$
 
-<math> \mathbf{n} \cdot \mathbf{p} + \mathbf{n} \cdot (\mathbf{A} \mathbf{s}) < d </math>
+$$
+\mathbf{n} \cdot \mathbf{p} + \mathbf{n} \cdot (\mathbf{A} \mathbf{s}) < d
+$$
 
-<math> \mathbf{n} \cdot (\mathbf{A} \mathbf{s}) < d - \mathbf{n} \cdot \mathbf{p} </math>
+$$
+\mathbf{n} \cdot (\mathbf{A} \mathbf{s}) < d - \mathbf{n} \cdot \mathbf{p}
+$$
 
-<math> (\mathbf{A}^T \mathbf{n}) \cdot \mathbf{s} < d - \mathbf{n} \cdot \mathbf{p} </math>
+$$
+(\mathbf{A}^T \mathbf{n}) \cdot \mathbf{s} < d - \mathbf{n} \cdot \mathbf{p}
+$$
 
-This is a single linear inequality of <math>\mathbf{s}</math>.
+This is a single linear inequality of $$\mathbf{s}$$.
 
 == Convert from Position Vector to Parameter Vector on Subspace ==
 
 Given the k-dimensional subspace defined by
 
-<math> \mathbf{x} = \mathbf{p} + \mathbf{A} \mathbf{s} </math>
+$$
+\mathbf{x} = \mathbf{p} + \mathbf{A} \mathbf{s}
+$$
 
-and a known point <math>\mathbf{x}</math> on that subspace. Find the value of the parameter vector <math>\mathbf{s}</math>.
+and a known point <math>\mathbf{x}$$ on that subspace. Find the value of the parameter vector <math>\mathbf{s}</math>.
 
-<math>\mathbf{A} \mathbf{s} = \mathbf{x} - \mathbf{p}</math>
+$$
+\mathbf{A} \mathbf{s} = \mathbf{x} - \mathbf{p}
+$$
 
-If we guarantee that the basis vectors of the subspace (the column vectors of <math>\mathbf{A}</math>) are orthogonal, we can simply project <math>\mathbf{x} - \mathbf{p}</math> individually onto each of these basis vectors.
+If we guarantee that the basis vectors of the subspace (the column vectors of <math>\mathbf{A}$$) are orthogonal, we can simply project <math>\mathbf{x} - \mathbf{p}</math> individually onto each of these basis vectors.
 
-<math>s_i = (\mathbf{x} - \mathbf{p}) \cdot \mathbf{\hat{v}}_i</math>
+$$
+s_i = (\mathbf{x} - \mathbf{p}) \cdot \mathbf{\hat{v}}_i
+$$
 
-<math>\mathbf{s} = \mathbf{A}^T (\mathbf{x} - \mathbf{p})</math>
+<math>\mathbf{s} = \mathbf{A}^T (\mathbf{x} - \mathbf{p})$$
 
 '''Hypothesis''' If x is not on the subspace, s will be the parameter for the projection of x onto the subspace.
 
-= N-Space Cross Product =
+# N-Space Cross Product
 
 We start with the following formula for the determinant of an NxN matrix.
 
-<math>\mathrm{det}(A) = \sum_{\sigma \in S_n} \mathrm{sgn}(\sigma) \prod_{i=1}^n a_{i,\sigma_i} </math>
+$$
+\mathrm{det}(A) = \sum_{\sigma \in S_n} \mathrm{sgn}(\sigma) \prod_{i=1}^n a_{i,\sigma_i}
+$$
 
-<math>\mathrm{det}(A) = \sum_{\sigma \in S_n} \mathrm{sgn}(\sigma) a_{1,\sigma_1} \prod_{i=2}^n a_{i,\sigma_i} </math>
+$$
+\mathrm{det}(A) = \sum_{\sigma \in S_n} \mathrm{sgn}(\sigma) a_{1,\sigma_1} \prod_{i=2}^n a_{i,\sigma_i}
+$$
 
 If the first row of the matrix is composed of the unit vectors of N-Space
 
-<math>a_{1,i} = \mathbf{e}_i</math>
+$$
+a_{1,i} = \mathbf{e}_i
+$$
 
 then we can write
 
-<math>\mathrm{det}(A) = \sum_{\sigma \in S_n} \mathrm{sgn}(\sigma) \mathbf{e}_{\sigma_1} \prod_{i=2}^n a_{i,\sigma_i} </math>
+$$
+\mathrm{det}(A) = \sum_{\sigma \in S_n} \mathrm{sgn}(\sigma) \mathbf{e}_{\sigma_1} \prod_{i=2}^n a_{i,\sigma_i}
+$$
 
-the question is, if A is constructed with the unit vectors forming the first row and n-1 row n-vectors forming the remaining rows, does the determinant and the formula above give the cross product of the n-1 n-vectors. Where the cross product is a vector that is linearly independent of all n-1 of the input vectors if the input vectors themselves are all linearly independent?
+the question is, if A is constructed with the unit vectors forming the first row and n-1 row n-vectors forming the remaining rows, does the determinant and the formula above give the cross product of the n-1 n-vectors.
+Where the cross product is a vector that is linearly independent of all n-1 of the input vectors if the input vectors themselves are all linearly independent?
+
+
+
