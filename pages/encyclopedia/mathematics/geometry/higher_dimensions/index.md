@@ -42,30 +42,35 @@ $$
 \mathrm{gorm}(\mathbf{r}) \equiv \langle \mathbf{\tilde{r}}\mathbf{r} \rangle_{0}
 $$
 
-
 Note that the number of terms in the rotation equation before simplification is \\(n^2 2^{(n-1)}\\). So the computational cost increases quickly with \\(n\\).
 
 # Linear Algebra
 
 ## Definition of a Subspace
 
-A k-dimensional subspace will at first be defined by the intersection of \\((n-k)\\) hyperplanes.
+A k-dimensional subspace will at first be defined by the intersection of \\(i\\) \\((n-k)\\) hyperplanes.
 
 $$
-\mathbf{n}_i \cdot \mathbf{x} = d_i
+\mathbf{n}_{i} \cdot \mathbf{x_{}} = d_{i}
 $$
 
-or
+we can combine the equations for individual hyperplanes into a single matrix-vector equation
 
 $$\mathbf{B} \mathbf{x} = \mathbf{d}$$
+
+where $$\mathbf{B}$$ is a $$k$$-by-$$n$$ matrix, $$\mathbf{x}$$ is the position vector and $$\mathbf{d}$$ is a $$k$$-vector.
 
 We want to convert this to the form
 
 $$
-\mathbf{x} = \mathbf{p} + \mathbf{A} \mathbf{s} $$
+\mathbf{x} = \mathbf{p} + \mathbf{A} \mathbf{s}
+$$
 
+where $$\mathbf{p}$$ is some point on the subspace, $$\mathbf{A}$$ is a $$n$$-by-$$k$$ matrix, and $$\mathbf{s}$$ is a $$k$$-vector.
+This is a parameterization of the subspace using the parameter $$\mathbf{s}$$.
 The columns of $$\mathbf{A}$$ are orthogonal basis vectors for the subspace.
 I do not yet know how to determine $$\mathbf{A}$$.
+
 Keywords to research are
 
 * Nullspace
@@ -78,7 +83,7 @@ Keywords to research are
 The ray is defined by
 
 $$
-\mathbf{x} = \mathbf{p}_0 + k \mathbf{v}
+\mathbf{x} = \mathbf{p}_0 + k \mathbf{v_{}}
 $$
 
 The plane is defined by
