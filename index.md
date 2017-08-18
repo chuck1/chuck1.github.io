@@ -18,5 +18,5 @@ layout: default
 
 # Pages
 
- * [encyclopedia](encyclopedia)
+ * [encyclopedia](pages/encyclopedia)
 
