@@ -69,7 +69,9 @@ $$
 where $$\mathbf{p}$$ is some point on the subspace, $$\mathbf{A}$$ is a $$n$$-by-$$k$$ matrix, and $$\mathbf{s}$$ is a $$k$$-vector.
 This is a parameterization of the subspace using the parameter $$\mathbf{s}$$.
 The columns of $$\mathbf{A}$$ are orthogonal basis vectors for the subspace.
-I do not yet know how to determine $$\mathbf{A}$$.
+
+The matrix $$\mathbf{A}$$ can be calculated using a gaussian elimination algorithm. See an implementation 
+[here](https://github.com/chuck1/VS-4Dvis-1/blob/master/NMath/Include/nmath/linalg/MatFunctions.h).
 
 Keywords to research are
 
