@@ -6,7 +6,7 @@ import pymongo
 import pygraphviz
 import crayons
 
-client = pymongo.MongoClient()
+client = pymongo.MongoClient(os.environ['MONGO_URI'])
 
 db = client['literature']
 
