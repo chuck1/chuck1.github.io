@@ -18,8 +18,5 @@ layout: default
 
 # Pages
 
-{% for post in site.pages %}
-  <a href="{{ post.url }}">{{ post.title }}</a>
-{% endfor %}
-
+ * [encyclopedia](encyclopedia)
 
