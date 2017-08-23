@@ -1,2 +1,7 @@
+---
+layout: default
+---
 
- * [[/Kinematics]]
+ * [kinematics](kinematics)
+ * [orbital mechanics](orbital_mechanics)
+

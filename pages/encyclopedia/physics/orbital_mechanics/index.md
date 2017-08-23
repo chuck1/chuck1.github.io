@@ -1,112 +1,107 @@
+---
+layout: default
+---
+
+## eliptical orbit
+
+### basics
 
 $$
 r_a + r_p = 2a
 $$
 
-
 $$
 r_a = a + c
 $$
-
-
-
-$$
-a = r_a - c
-$$
-
-
 
 $$
 r_p = a - c
 $$
 
+True anomaly
 
+$$
+\nu = \arccos \frac{\mathbf{e} \cdot \mathbf{r}}{|\mathbf{e}| |\mathbf{r}|}
+$$
+
+eccentricity vector
+
+$$
+\mathbf{e} = \frac{\mathbf{v} \times \mathbf{h}}{\mu} - \frac{\mathbf{r}}{|\mathbf{r}|}
+$$
+
+$$
+\mathbf{h} = \mathbf{r} \times \mathbf{v}
+$$
+
+
+### other equations
+
+$$
+a = r_a - c
+$$
 
 $$
 a = r_p + c
 $$
 
-
-
 $$
 c = a - r_p = r_a - a
 $$
-
-
 
 $$
 r_1 + r_2 = 2 a
 $$
 
-
-
 $\vec{F}_1$ and $\vec{F}_2$ are the position vectors of the focal points.
-
 
 $$
 |\vec{F}_1 - \vec{F}_2| = 2c
 $$
 
-
 $\vec{r}_1$ and $\vec{r}_2$ are vectors from the focal points to the satellite.
 
 The position of the satellite can be written in terms of either focal point
-
 
 $$
 \vec{F}_1 + \vec{r}_1 = \vec{F}_2 + \vec{r}_2
 $$
 
-
-
 $$
 \vec{F}_1 - \vec{F}_2 = \vec{r}_2 - \vec{r}_1
 $$
 
-
 So we can say
-
 
 $$
 |\vec{r}_1 - \vec{r}_2| = 2c
 $$
 
-
 We also know that
-
 
 $$
 |\vec{r}_1| + |\vec{r}_2| = 2a
 $$
 
-
-
 $$
 r_1 + r_2 = 2a
 $$
 
-
-
-== Ellipse From Position, Tangent, and Apoapsis or Periapsis ==
+## ellipse from position, tangent, and apoapsis or periapsis
 
 First find $\hat{r}_2$.
 
 We know that $\hat{r}_2$ is the reflection of $\hat{r}_1$ about a line perpendicular to the tangent line.
 
-
 $$
 \hat{r}_2 = \hat{r}_1 - 2 \hat{t}(\hat{t} \cdot \hat{r}_1)
 $$
-
-
 
 $$
 \vec{r}_2 = r_2 \hat{r}_2
 $$
 
-
 Start with
-
 
 $$
 |r_1 \hat{r}_1 - r_2 \hat{r}_2| = 2c
