@@ -25,7 +25,8 @@ def generate_pages():
 
         with open(dst, 'w') as f:
             f.write('---\nlayout: default\n---\n\n')
-
+            
+            f.write("[pdf](https://s3-us-west-2.amazonaws.com/19f075ca4a482833.media/articles/{}.pdf)\n\n".format(str(a['_id'])))
             f.write('## id\n\n{}\n\n'.format(str(a['_id'])))
             f.write('## title\n\n{}\n\n'.format(a['title']))
             f.write('## notes\n\n{}\n\n'.format(a.get('notes','')))

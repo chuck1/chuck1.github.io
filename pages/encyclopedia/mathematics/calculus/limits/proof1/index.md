@@ -2,21 +2,16 @@
 layout: default
 ---
 
-
 $$
 \lim_{x\to\infty} \left( \frac{x+a}{2} - \sqrt{\left(\frac{x+a}{2}\right)^2 - abx} \right)
 $$
 
-
 Rearrange the function
 
-
 $$
-\frac{x+a}{2} - \sqrt{\left(\frac{x+a}{2}\right)^2 - abx} 
-\left(\frac{\frac{x+a}{2} + \sqrt{\left(\frac{x+a}{2}\right)^2 - abx}}{\frac{x+a}{2} + \sqrt{\left(\frac{x+a}{2}\right)^2 - abx}}\right)
+\left( \frac{x+a}{2} - \sqrt{\left(\frac{x+a}{2}\right)^2 - abx} \right)
+\left( \frac{\frac{x+a}{2} + \sqrt{\left(\frac{x+a}{2}\right)^2 - abx}}{\frac{x+a}{2} + \sqrt{\left(\frac{x+a}{2}\right)^2 - abx}} \right)
 $$
-
-
 
 $$
 \frac
@@ -24,18 +19,13 @@ $$
 { \frac{x+a}{2} + \sqrt{\left(\frac{x+a}{2}\right)^2 - abx} }
 $$
 
-
-
-
 $$
 \frac
 { abx }
 { \frac{x+a}{2} + \sqrt{\left(\frac{x+a}{2}\right)^2 - abx} }
 $$
 
-
 Back to taking the limit
-
 
 $$
 \lim_{x\to\infty} \left(
@@ -45,9 +35,7 @@ $$
 \right)
 $$
 
-
 LHopitals Rule
-
 
 $$
 \lim_{x\to\infty} \left(
@@ -56,8 +44,6 @@ $$
 { \frac{d}{dx} \frac{x+a}{2} + \frac{d}{dx} \sqrt{\left(\frac{x+a}{2}\right)^2 - abx} }
 \right)
 $$
-
-
 
 $$
 \lim_{x\to\infty} \left(
@@ -68,9 +54,7 @@ $$
 \right)
 $$
 
-
 Moving the limit inside
-
 
 $$
 \frac
@@ -81,17 +65,13 @@ $$
 }
 $$
 
-
 Lets look at the limit in the denominator
-
 
 $$
 \lim \left( \frac{\frac{x+a}{2} - ab}{2\sqrt{\left(\frac{x+a}{2}\right)^2 - abx}} \right) 
 $$
 
-
 Again apply LHopitals Rule
-
 
 $$
 \lim \left( 
@@ -100,9 +80,7 @@ $$
 \right) 
 $$
 
-
 Move the limit inside
-
 
 $$
 \frac{ \frac{1}{2} }

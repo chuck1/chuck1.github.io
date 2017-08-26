@@ -53,13 +53,13 @@ $$
 r_1 + r_2 = 2 a
 $$
 
-$\vec{F}_1$ and $\vec{F}_2$ are the position vectors of the focal points.
+$$\vec{F}_1$$ and $$\vec{F}_2$$ are the position vectors of the focal points.
 
 $$
 |\vec{F}_1 - \vec{F}_2| = 2c
 $$
 
-$\vec{r}_1$ and $\vec{r}_2$ are vectors from the focal points to the satellite.
+$$\vec{r}_1$$ and $$\vec{r}_2$$ are vectors from the focal points to the satellite.
 
 The position of the satellite can be written in terms of either focal point
 
@@ -89,9 +89,9 @@ $$
 
 ## ellipse from position, tangent, and apoapsis or periapsis
 
-First find $\hat{r}_2$.
+First find $$\hat{r}_2$$.
 
-We know that $\hat{r}_2$ is the reflection of $\hat{r}_1$ about a line perpendicular to the tangent line.
+We know that $$\hat{r}_2$$ is the reflection of $$\hat{r}_1$$ about a line perpendicular to the tangent line.
 
 $$
 \hat{r}_2 = \hat{r}_1 - 2 \hat{t}(\hat{t} \cdot \hat{r}_1)
@@ -147,7 +147,7 @@ c^2 = a^2 - 2 a r_p + r_p^2 = r_a^2 - 2 a r_a + a^2
 $$
 
 
-By squaring $c$, the apoapsis and periapsis are indistinguishable so we can just write
+By squaring $$c$$, the apoapsis and periapsis are indistinguishable so we can just write
 
 
 $$
@@ -256,13 +256,13 @@ r_2
 $$
 
 
-where $\alpha=\frac{r_{ex}}{r_1}$.
+where $$\alpha=\frac{r_{ex}}{r_1}$$.
 
-Here we plot the function with $r_1=1$ and $f=0.85$.
+Here we plot the function with $$r_1=1$$ and $$f=0.85$$.
 
-{{attachment:ellipse1.png}}
+![](https://s3-us-west-2.amazonaws.com/19f075ca4a482833.media/ellipse1.png)
 
-There is a gap between $fr_1$ and $r_1$ for which the function is not defined and such an ellipse cannot be constructed.
+There is a gap between $$fr_1$$ and $$r_1$$ for which the function is not defined and such an ellipse cannot be constructed.
 
 The lower boundary of the gap corresponds to the upper limit of the periapsis and can be found by taking the function
 
@@ -283,5 +283,5 @@ $$
 r_{ex} = \frac{r_1+r_2}{2} - \sqrt{(\frac{r_1+r_2}{2})^2 - 4fr_1r_2}
 $$
 
-and taking the limit as $r_2$ goes to infinity. See a proof [here](/pages/encyclopedia/mathematics/calculus/limits/proof1).
+and taking the limit as $$r_2$$ goes to infinity. See a proof [here](/pages/encyclopedia/mathematics/calculus/limits/proof1).
 
