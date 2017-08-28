@@ -48,6 +48,13 @@ Here we define a function that will serve as a recursive component of $$f$$ usin
 
 **ALGORITHM**
 
+    for each e in E
+        g(e, e, {e}, f1, f2)
+        switch the temporary direction of e
+        g(e, e, {e}, f1, f2)
+
+where f1 and f2 are specific to the type of feature we are looking for, see below, and g is
+
     function g(e0, e, Q, f1, f2)
         e is an edge that temporarily points from v0 to v1
         Q is a sequence of edges. Q contains e.
