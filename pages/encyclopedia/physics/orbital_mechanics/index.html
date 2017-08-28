@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Charles Rymal by </title>
+		<meta name="description" content="My Blog"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#157878">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/assets/css/style.css?v=">
+
+		<script type="text/javascript"
+		src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
+	</head>
+	<body>
+		<section class="page-header">
+			<h1 class="project-name">Charles Rymal</h1>
+			<h2 class="project-tagline">My Blog</h2>
+			
+			
+		</section>
+
+		<section class="main-content">
+			<h2 id="eliptical-orbit">eliptical orbit</h2>
+
+<h3 id="basics">basics</h3>
+
+<script type="math/tex; mode=display">r_a + r_p = 2a</script>
+
+<script type="math/tex; mode=display">r_a = a + c</script>
+
+<script type="math/tex; mode=display">r_p = a - c</script>
+
+<p>True anomaly</p>
+
+<script type="math/tex; mode=display">\nu = \arccos \frac{\mathbf{e} \cdot \mathbf{r}}{|\mathbf{e}| |\mathbf{r}|}</script>
+
+<p>eccentricity vector</p>
+
+<script type="math/tex; mode=display">\mathbf{e} = \frac{\mathbf{v} \times \mathbf{h}}{\mu} - \frac{\mathbf{r}}{|\mathbf{r}|}</script>
+
+<script type="math/tex; mode=display">\mathbf{h} = \mathbf{r} \times \mathbf{v}</script>
+
+<h3 id="other-equations">other equations</h3>
+
+<script type="math/tex; mode=display">a = r_a - c</script>
+
+<script type="math/tex; mode=display">a = r_p + c</script>
+
+<script type="math/tex; mode=display">c = a - r_p = r_a - a</script>
+
+<script type="math/tex; mode=display">r_1 + r_2 = 2 a</script>
+
+<p><script type="math/tex">\vec{F}_1</script> and <script type="math/tex">\vec{F}_2</script> are the position vectors of the focal points.</p>
+
+<script type="math/tex; mode=display">|\vec{F}_1 - \vec{F}_2| = 2c</script>
+
+<p><script type="math/tex">\vec{r}_1</script> and <script type="math/tex">\vec{r}_2</script> are vectors from the focal points to the satellite.</p>
+
+<p>The position of the satellite can be written in terms of either focal point</p>
+
+<script type="math/tex; mode=display">\vec{F}_1 + \vec{r}_1 = \vec{F}_2 + \vec{r}_2</script>
+
+<script type="math/tex; mode=display">\vec{F}_1 - \vec{F}_2 = \vec{r}_2 - \vec{r}_1</script>
+
+<p>So we can say</p>
+
+<script type="math/tex; mode=display">|\vec{r}_1 - \vec{r}_2| = 2c</script>
+
+<p>We also know that</p>
+
+<script type="math/tex; mode=display">|\vec{r}_1| + |\vec{r}_2| = 2a</script>
+
+<script type="math/tex; mode=display">r_1 + r_2 = 2a</script>
+
+<h2 id="ellipse-from-position-tangent-and-apoapsis-or-periapsis">ellipse from position, tangent, and apoapsis or periapsis</h2>
+
+<p>First find <script type="math/tex">\hat{r}_2</script>.</p>
+
+<p>We know that <script type="math/tex">\hat{r}_2</script> is the reflection of <script type="math/tex">\hat{r}_1</script> about a line perpendicular to the tangent line.</p>
+
+<script type="math/tex; mode=display">\hat{r}_2 = \hat{r}_1 - 2 \hat{t}(\hat{t} \cdot \hat{r}_1)</script>
+
+<script type="math/tex; mode=display">\vec{r}_2 = r_2 \hat{r}_2</script>
+
+<p>Start with</p>
+
+<script type="math/tex; mode=display">|r_1 \hat{r}_1 - r_2 \hat{r}_2| = 2c</script>
+
+<p>Rewrite the magnitude in terms of dot product</p>
+
+<script type="math/tex; mode=display">(r_1 \hat{r}_1 - r_2 \hat{r}_2) \cdot (r_1 \hat{r}_1 - r_2 \hat{r}_2) = 4c^2</script>
+
+<script type="math/tex; mode=display">r_1^2 (\hat{r}_1 \cdot \hat{r}_1)
+- 2 ((r_1 \hat{r}_1) \cdot (r_2 \hat{r}_2))
++ r_2^2 (\hat{r}_2 \cdot \hat{r}_2)
+= 4c^2</script>
+
+<script type="math/tex; mode=display">r_1^2
+- 2 r_1 r_2 (\hat{r}_1 \cdot \hat{r}_2)
++ r_2^2
+= 4c^2</script>
+
+<p>Note that</p>
+
+<script type="math/tex; mode=display">c^2 = (a - r_p)^2 = (r_a - a)^2</script>
+
+<script type="math/tex; mode=display">c^2 = a^2 - 2 a r_p + r_p^2 = r_a^2 - 2 a r_a + a^2</script>
+
+<p>By squaring <script type="math/tex">c</script>, the apoapsis and periapsis are indistinguishable so we can just write</p>
+
+<script type="math/tex; mode=display">c^2 = a^2 - 2 a r_e + r_e^2</script>
+
+<script type="math/tex; mode=display">(2c)^2 = (2a)^2 - 4 (2a) r_e + 4 r_e^2</script>
+
+<p>Substitute $a$ for the radii</p>
+
+<script type="math/tex; mode=display">(2c)^2 = (r_1+r_2)^2 - 4 (r_1+r_2) r_e + 4 r_e^2</script>
+
+<script type="math/tex; mode=display">(2c)^2 = r_1^2 + 2r_1r_2 + r_2^2 - 4 (r_1+r_2) r_e + 4 r_e^2</script>
+
+<p>substituting we get</p>
+
+<script type="math/tex; mode=display">r_1^2
+- 2 r_2 (\vec{r}_1 \cdot \hat{r}_2)
++ r_2^2
+= 4 r_e^2 + r_1^2 + r_2^2 - 4 r_e r_1 - 4 r_e r_2 + 2 r_1 r_2</script>
+
+<p>do some cancellations</p>
+
+<script type="math/tex; mode=display">- r_1 r_2 (\hat{r}_1 \cdot \hat{r}_2)
+= 2 r_a^2 - 2 r_a r_1 - 2 r_a r_2 + r_1 r_2</script>
+
+<p>solve for $r_2$</p>
+
+<script type="math/tex; mode=display">- r_1 r_2 (\hat{r}_1 \cdot \hat{r}_2) + 2 r_a r_2 - r_1 r_2
+= 2 r_a^2 - 2 r_a r_1</script>
+
+<script type="math/tex; mode=display">r_2
+= \frac{
+2 r_a^2 - 2 r_a r_1
+}{
+- (\hat{r}_1 \cdot \hat{r}_2) r_1 + 2 r_a - r_1
+}</script>
+
+<script type="math/tex; mode=display">r_2
+= \frac{
+r_{ex} (r_{ex} - r_1)
+}{
+r_{ex} - \frac{1}{2}(1 + \hat{r}_1 \cdot \hat{r}_2) r_1
+}</script>
+
+<script type="math/tex; mode=display">f=\frac{1}{2}(1+\hat{r}_1 \cdot \hat{r}_2)</script>
+
+<script type="math/tex; mode=display">r_2
+= \frac{
+r_{ex} (r_{ex} - r_1)
+}{
+r_{ex} - f r_1
+}</script>
+
+<p>or</p>
+
+<script type="math/tex; mode=display">r_2
+=r_{ex} \frac{
+\alpha - 1
+}{
+\alpha - f
+}</script>
+
+<p>where <script type="math/tex">\alpha=\frac{r_{ex}}{r_1}</script>.</p>
+
+<p>Here we plot the function with <script type="math/tex">r_1=1</script> and <script type="math/tex">f=0.85</script>.</p>
+
+<p><img src="https://s3-us-west-2.amazonaws.com/19f075ca4a482833.media/ellipse1.png" alt="" /></p>
+
+<p>There is a gap between <script type="math/tex">fr_1</script> and <script type="math/tex">r_1</script> for which the function is not defined and such an ellipse cannot be constructed.</p>
+
+<p>The lower boundary of the gap corresponds to the upper limit of the periapsis and can be found by taking the function</p>
+
+<script type="math/tex; mode=display">0 = 2 r_{ex}^2 - 2 r_{ex} r_1 - 2 r_{ex} r_2 + r_1 r_2 - r_1 r_2 (\hat{r}_1 \cdot \hat{r}_2)</script>
+
+<p>and solving for $r_{ex}$</p>
+
+<script type="math/tex; mode=display">r_{ex} = \frac{r_1+r_2}{2} \pm \sqrt{(\frac{r_1+r_2}{2})^2 - 4fr_1r_2}</script>
+
+<p>the periaps is given by</p>
+
+<script type="math/tex; mode=display">r_{ex} = \frac{r_1+r_2}{2} - \sqrt{(\frac{r_1+r_2}{2})^2 - 4fr_1r_2}</script>
+
+<p>and taking the limit as <script type="math/tex">r_2</script> goes to infinity. See a proof <a href="/pages/encyclopedia/mathematics/calculus/limits/proof1">here</a>.</p>
+
+
+
+			<footer class="site-footer">
+				
+				<span class="site-footer-credits">This page was generated by <a href="https://jekyllrb.com/">jekyll</a>.</span>
+			</footer>
+		</section>
+
+		
+	</body>
+</html>
+
