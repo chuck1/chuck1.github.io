@@ -4,6 +4,7 @@ layout: default
 
  * [algorithms](algorithms)
  * [algebra](algebra)
+ * [calculus](calculus)
  * [geometry](geometry)
  * [graph theory](graph_theory)
  * [linear programming](linear_programming)
