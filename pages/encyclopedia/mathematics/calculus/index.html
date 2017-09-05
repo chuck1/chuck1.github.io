@@ -26,11 +26,72 @@
 		<section class="main-content">
 			<h1 id="calculus">calculus</h1>
 
+<ul>
+  <li><a href="sensitivity_analysis">sensitivity analysis</a></li>
+</ul>
+
 <h2 id="rules">rules</h2>
 
 <h3 id="chain-rule">chain rule</h3>
 
 <script type="math/tex; mode=display">\frac{d}{dx} f(g(x)) = f'(g(x)) g'(x)</script>
+
+<h3 id="product-rule">product rule</h3>
+
+<script type="math/tex; mode=display">\frac{d}{dx} (f(x) g(x)) = f(x) g'(x) + g(x) f'(x)</script>
+
+<h3 id="derivative-with-respect-to-a-function">derivative with respect to a function</h3>
+
+<script type="math/tex; mode=display">\frac{d}{df} y</script>
+
+<p>I am not clear on how to handle this situation.</p>
+
+<p>I hypothesize that the result depends on whether or not <script type="math/tex">f</script> is a function of <script type="math/tex">y</script>.
+And that if <script type="math/tex">f</script> is a function of <script type="math/tex">y</script>, it implies that <script type="math/tex">y</script> is a function of <script type="math/tex">f</script>.</p>
+
+<p>We know that if <script type="math/tex">f</script> is not a function of <script type="math/tex">y</script></p>
+
+<script type="math/tex; mode=display">\frac{df}{dy} = 0</script>
+
+<p>It may be helpful to stop thinking about variables as being different that functions of variables.</p>
+
+<p>I can show for some examples that</p>
+
+<script type="math/tex; mode=display">\frac{dy}{dx} = \frac{1}{\frac{dx}{dy}}</script>
+
+<p>where</p>
+
+<script type="math/tex; mode=display">y = f(x)</script>
+
+<p>Here are the examples</p>
+
+<script type="math/tex; mode=display">y = ax</script>
+
+<script type="math/tex; mode=display">\frac{dy}{dx} = a</script>
+
+<script type="math/tex; mode=display">x = \frac{1}{a} y</script>
+
+<script type="math/tex; mode=display">\frac{dx}{dy} = \frac{1}{a}</script>
+
+<p>And another</p>
+
+<script type="math/tex; mode=display">y = e^x</script>
+
+<script type="math/tex; mode=display">\frac{dy}{dx} = e^x</script>
+
+<script type="math/tex; mode=display">x = \ln(y)</script>
+
+<script type="math/tex; mode=display">\frac{dx}{dy} = \frac{1}{y} = \frac{1}{e^x}</script>
+
+<p>What if <script type="math/tex">x</script> and <script type="math/tex">y</script> are inseparable?</p>
+
+<script type="math/tex; mode=display">y = x + e^x</script>
+
+<script type="math/tex; mode=display">dy = dx + e^x dx</script>
+
+<script type="math/tex; mode=display">\frac{dy}{dx} = 1 + e^x</script>
+
+<script type="math/tex; mode=display">\frac{dx}{dy} = \frac{1}{1 + e^x}</script>
 
 
 
