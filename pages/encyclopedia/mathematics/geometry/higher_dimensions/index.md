@@ -24,7 +24,7 @@ Example in three dimensions
 
 $$
 \mathbf{v}' = (r_{0} - r_{1,2} \mathbf{e}_1 \mathbf{e}_2 - r_{1,3} \mathbf{e}_1 \mathbf{e}_3 - r_{2,3} \mathbf{e}_2 \mathbf{e}_3)(v_{1} \mathbf{e}_1 + v_{2} \mathbf{e}_2 + v_{3} \mathbf{e}_3)
-(r_{0} + r_{1,2} \mathbf{e}_1 \mathbf{e}_2 + r_{1,3} \mathbf{e}\_1 \mathbf{e}_3 + r_{2,3} \mathbf{e}_2 \mathbf{e}_3)
+(r_{0} + r_{1,2} \mathbf{e}_1 \mathbf{e}_2 + r_{1,3} \mathbf{e}_1 \mathbf{e}_3 + r_{2,3} \mathbf{e}_2 \mathbf{e}_3)
 $$
 
 If you distribute the above, the trivector terms cancel, leaving only the vector terms. If you collect the vectors terms, you can construct a rotation matrix and see that it is identical to construction using quaternions.
