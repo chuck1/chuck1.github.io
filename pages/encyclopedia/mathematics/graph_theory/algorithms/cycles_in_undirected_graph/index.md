@@ -2,15 +2,17 @@
 layout: default
 ---
 
-== Theorems ==
+* [construct 1](construct_1)
 
-=== number of edges in a complete graph ===
+# Theorems
+
+## number of edges in a complete graph 
 
 $$
 \frac{n(n-1)}{2}
 $$
 
-=== number of cycles in a complete graph ===
+## number of cycles in a complete graph
 
 hypothesis: the number of unique length $k$ cycles in a complete graph with $n$ vertices is
 
@@ -39,7 +41,7 @@ This of course, will only work for odd graphs.
     0--2--4--1--3--0
     }
 
-=== length of cycles in fully connected graph ===
+## length of cycles in fully connected graph
 
 I hypothesis that for graphs with an odd number of vertices, it is possible to create a cycle that includes all edges.
 And that for graphs with an even number of vertices, this is not possible.
@@ -53,7 +55,7 @@ $$
 n\left(\frac{n-2}{2}\right)+1
 $$
 
-== Algorithm ==
+# Algorithm
 
 This algorithm uses temporary orienting of edges.
 The stack is a ordered list of edges to which one can add and remove edges from either end.
