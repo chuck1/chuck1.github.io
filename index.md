@@ -5,6 +5,13 @@
 layout: default
 ---
 
+# Pages
+
+ * [encyclopedia](pages/encyclopedia)
+ * [projects](pages/projects)
+
+# Posts
+
 <!-- This loops through the paginated posts -->
 {% for post in site.posts %}
   <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
@@ -16,8 +23,4 @@ layout: default
   </div>
 {% endfor %}
 
-# Pages
-
- * [encyclopedia](pages/encyclopedia)
- * [projects](pages/projects)
 

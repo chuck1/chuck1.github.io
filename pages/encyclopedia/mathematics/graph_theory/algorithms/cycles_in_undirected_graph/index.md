@@ -6,12 +6,6 @@ layout: default
 
 # Theorems
 
-## number of edges in a complete graph 
-
-$$
-\frac{n(n-1)}{2}
-$$
-
 ## number of cycles in a complete graph
 
 hypothesis: the number of unique length $k$ cycles in a complete graph with $n$ vertices is

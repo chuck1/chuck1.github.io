@@ -3,8 +3,9 @@ layout: default
 ---
 
  * [algorithms](algorithms)
+ * [complete graph](complete_graph)
  * [flower graph](flower_graph)
-
+ * [cycles](cycles)
 
 references
 
