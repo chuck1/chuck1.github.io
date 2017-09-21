@@ -44,6 +44,7 @@ $$
 \mathbf{D} \mathbf{x}_e = \mathbf{x}_v
 $$
 
+where $$\mathbf{D}$$ is the connectivity matrix for the graph.
 Each included vertex should have a value of $$2$$ and every other vertex should have a value of $$0$$.
 So we can write
 
@@ -70,10 +71,6 @@ $$
 \mathbf{2}_v
 \end{bmatrix}
 $$
-
-
-
-
 
 
 
