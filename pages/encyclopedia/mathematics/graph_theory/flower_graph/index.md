@@ -9,7 +9,7 @@ cycles has exactly one vertex in common, the root vertex.
 
 For example here is a flower graph with $$n = 3$$.
 
-![](/dot/flower_graph1.png)
+![](flower3.svg)
 
 The number of [cycles][cycles] in a flower graph of size $$n$$ is
 

@@ -5,7 +5,6 @@ module Jekyll
 			@text = text
 		end
 		def render(context)
-			puts context
 			"<a href=\"/pages/literature/articles/#{@text}\">#{(@text.strip)[-4,4]}</a>"
 		end
 	end

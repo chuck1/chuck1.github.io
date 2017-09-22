@@ -6,6 +6,7 @@ layout: default
  * [complete graph](complete_graph)
  * [flower graph](flower_graph)
  * [cycles](cycles)
+ * [vertex identification](vertex_identification)
 
 references
 
