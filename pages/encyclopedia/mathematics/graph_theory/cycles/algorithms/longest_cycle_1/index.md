@@ -39,9 +39,15 @@ What we need to do is replace these edges with two virtual edges, each of which 
 between two of the original edges.
 If we correctly choose which pairs of edge to combine, we will get the true solution.
 It is clear that the pairs should be either (0--3 and 1--3) and (0--2 and 1--2) or (0--3 and 0--2) and (1--2 and 1--3).
-The key here is that edges that do not share common neighbors are not in the same group.
-The key may also be that edges that *do* share common neighbors *are* in the same group.
-I'm not sure which it is.
+I think the key here is that edges that do not share common neighbors are not in the same group.
+Note that some combinations of the edges from the two groups are not correct solutions.
+But if once we have our solution in which we have these virtual edges, we can step through
+the cycle, and when we reach a virtual edges, we make a choice. That choice than affects which edges we
+should chose from when we reach the next virtual edge.
+Thats why this only works with four edges; there are two valid solutions, one that uses two of the edges, and 
+one that uses the other two, there cannot be an edge that is part of both solutions (PROOF).
+So really, the edges are groups in the way described about but there is another grouping that grous the pairs
+of edges (one from each of the origin groups) that will be part of the same solution.
 
 An explanation of why the groupings are important is that when we identify two vertices, the edge
 between them is lost.
