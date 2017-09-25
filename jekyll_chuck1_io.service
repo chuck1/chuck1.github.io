@@ -1,0 +1,10 @@
+[Unit]
+Description=run personal jekyll site
+
+[Service]
+WorkingDirectory=/home/crymal/git/chuck1.github.io
+ExecStart=/home/crymal/git/chuck1.github.io/_scripts/run.bash
+
+[Install]
+WantedBy=multi-user.target
+

@@ -1,8 +1,15 @@
+---
+layout: default
+---
 # Rotation
+
+torque equation
 
 $$
 \tau = I \dot{\omega} + \omega \times ( I \omega ) 
 $$
+
+solve for angular acceleration
 
 $$
 I \dot{\omega} = \tau - \omega \times ( I \omega )
@@ -12,12 +19,15 @@ $$
 \dot{\omega} = I^{-1} ( \tau - \omega \times ( I \omega ) )
 $$
 
+where $$I$$ is the moment of inertia matrix.
+With the right choice of body coordinates, the inertia matrix takes the form
+
 $$
 I =
 \begin{bmatrix}
-I_xx & 0 & 0 \\
-0 & I_yy & 0 \\
-0 & 0 & I_zz
+I_{xx} & 0 & 0 \\
+0 & I_{yy} & 0 \\
+0 & 0 & I_{zz}
 \end{bmatrix}
 $$
 
