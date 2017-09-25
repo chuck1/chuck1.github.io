@@ -1,3 +1,6 @@
+---
+layout:default
+---
 
 Rotate a vector from body to global frame
 

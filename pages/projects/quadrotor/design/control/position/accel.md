@@ -1,3 +1,6 @@
+---
+layout:default
+---
 # Acceleration Based
 
 ## Position Error

@@ -1,3 +1,6 @@
+---
+layout:default
+---
 The position control law outputs net jerk in the inertial frame.
 
 j = C_9 chi_5 + C_10 (x_ref - x) + C_11 (x_ref' - v) + C_12 (x_ref'' - a) + x_ref'''

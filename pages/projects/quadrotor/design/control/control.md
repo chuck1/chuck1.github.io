@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Control
 
 ## variables
@@ -38,8 +42,9 @@ F\_M = [ f\_M0 , f\_M1 , f\_M2 , f\_M3 ] = func(f\_zRB, T\_RB)
 
 methods for calculating f\_zRB are descibed in
 
-[position](position/position.md)
+[position](position)
 
 method for calculating T\_RB are described in
 
-[attitude](attitude/attitude.md)
+[attitude](attitude)
+
