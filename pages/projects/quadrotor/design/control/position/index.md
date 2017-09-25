@@ -1,8 +1,8 @@
 ---
-layout:default
+layout: default
 ---
-* [accel](accel.md)
-* [impulse](impulse.md)
-* [snap](snap.md)
+* [accel](accel)
+* [impulse](impulse)
+* [snap](snap)
 
 
