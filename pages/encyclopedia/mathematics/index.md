@@ -11,6 +11,7 @@ layout: default
  * [linear algebra](linear_algebra)
  * [linear programming](linear_programming)
  * [number theory](number_theory)
+ * [numerical analysis](numerical_analysis)
  * [proofs](proofs)
  * [quaternion](quaternion)
  * [set theory](set_theory)
