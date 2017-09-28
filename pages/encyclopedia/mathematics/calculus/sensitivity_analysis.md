@@ -62,18 +62,31 @@ $$
 e_y^2 = \frac{1}{\left( \frac{\partial f}{\partial y} \right)^2} \sum \left( \frac{\partial f}{\partial x_i} e_{x_i} \right)^2
 $$
 
+### system of equations
 
+Suppose we have a system of equations. For each equation, we can write
 
+$$
+\sum \frac{\partial f}{\partial x_i}^2 e_i^2 a_i = 0
+$$
 
+where $$a_i$$ is $$-1$$ for exactly one $$i$$ and $$1$$ for all others.
+How do you know which $$a_i$$ should be $$-1$$?
 
+For now consider only systems whose graphical representations are a simple cycle.
+In other words, each equation has exactly two unknowns.
+So for each uncertainty equation there are only two choices.
+We can calculate a solution using every possible combination and see what happens.
+I have a theory that it for all possible combinations, there is only one valid solution.
 
+Back to the general case. We can rewrite using $j$ instead of $i$ where $j$ represents just the
+unknown uncertainties in this particular equation.
 
+$$
+\sum \frac{\partial f}{\partial x_j}^2 e_j^2 a_j = b
+$$
 
-
-
-
-
-
+You can see that with form, we can put all of the equations in a matrix form.
 
 
 
