@@ -16,4 +16,7 @@ layout: default
  * [quaternion](quaternion)
  * [set theory](set_theory)
  * [system of equations](system_of_equations)
+ * [triangle of power](triangle_of_power)
+
+
 
