@@ -1,0 +1,9 @@
+---
+---
+digraph {
+rankdir="LR"
+x01 [label="MUL(a+b)";shape="rect"]
+xab [label="x(a+b)"]
+x -> x01
+x01 -> xab
+}

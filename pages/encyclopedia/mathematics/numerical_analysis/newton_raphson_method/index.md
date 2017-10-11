@@ -38,20 +38,28 @@ $$
 
 ## condition for convergence
 
+$$\alpha$$ is a root.
+The expansion of $$f$$ about $$\alpha$$ is
+
 $$
 f(\alpha) = f(x_n) + f'(x_n)(\alpha - x_n) + R_1
 $$
 
 $$
-R_1 = \frac{1}{2!} f''(\zeta_n) (\alpha - x_n)^2
+R_1 = \frac{1}{2!} f''(\xi_n) (\alpha - x_n)^2
 $$
 
-$$
-0 = f(\alpha) = f(x_n) + f'(x_n)(\alpha - x_n) + \frac{1}{2!} f''(\zeta_n) (\alpha - x_n)^2
-$$
+where $$\xi_n$$ is between $$\alpha$$ and $$x_n$$.
+Since $$\alpha$$ is a root
 
 $$
-\frac{f(x_n)}{f'(x_n)} + (\alpha - x_n) = - \frac{1}{2!} \frac{f''(\zeta_n)}{f'(x_n)} (\alpha - x_n)^2
+0 = f(\alpha) = f(x_n) + f'(x_n)(\alpha - x_n) + \frac{1}{2!} f''(\xi_n) (\alpha - x_n)^2
+$$
+
+divide by $$f'(x_n)$$
+
+$$
+\frac{f(x_n)}{f'(x_n)} + (\alpha - x_n) = - \frac{1}{2!} \frac{f''(\xi_n)}{f'(x_n)} (\alpha - x_n)^2
 $$
 
 remember
@@ -60,16 +68,22 @@ $$
 x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}
 $$
 
-$$
-\alpha - x_{n+1} = -\frac{f''(\zeta_n)}{2 f'(x_n)} (\alpha - x_n)^2
-$$
+so
 
 $$
-\epsilon_{n+1} = -\frac{f''(\zeta_n)}{2 f'(x_n)} \epsilon_n^2
+\alpha - x_{n+1} = -\frac{f''(\xi_n)}{2 f'(x_n)} (\alpha - x_n)^2
 $$
 
+replace $$\alpha - x_i$$ with $$\epsilon_i$$
+
 $$
-|\epsilon_{n+1}| = \frac{|f''(\zeta_n)|}{2 |f'(x_n)|} \epsilon_n^2
+\epsilon_{n+1} = -\frac{f''(\xi_n)}{2 f'(x_n)} \epsilon_n^2
+$$
+
+take the absolute value
+
+$$
+|\epsilon_{n+1}| = \frac{|f''(\xi_n)|}{2 |f'(x_n)|} \epsilon_n^2
 $$
 
 
