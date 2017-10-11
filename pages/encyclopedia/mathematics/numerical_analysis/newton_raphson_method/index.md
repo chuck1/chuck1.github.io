@@ -4,6 +4,8 @@ title: newton raphson method
 ---
 # newton raphson method
 
+* [example 1](example_01)
+
 $$
 x:f(x)=0
 $$
