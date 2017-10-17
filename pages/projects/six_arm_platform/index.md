@@ -36,4 +36,8 @@ At the base end, the nut will be fixed to a pivot.
 As the motor turns, the screw will rotate relative to the nut (this is why the pivots must only have
 two rotational DOF) changing the length of the arm.
 
+## description of operation
+
+The platform will be controlled by an arduino. The arduino will receive gcode commands from a computer by serial communication.
+
 
