@@ -46,44 +46,7 @@ $$
 
 where $$p$$ and $$q$$ are the starting position and orientation of the tool.
 
-$$
-e = \sqrt{ \sum (z^*_i - z_i)^2 }
-$$
 
-where $$z^*_i$$ is the z-position of the tool tip if the tool is first positioned at $$(p, q)$$ and then the length deltas are applied.
-so
-
-$$
-z^*_i = g(p, q, \Delta l_i)
-$$
-
-The first step in the objective function is to move the tool to the guess position using `move_tool`.
-If we consider this function to return the tool position, then the derivative is identity.
-
-$$
-P = \textrm{move_tool}(P) = P
-$$
-
-The second step is to move the arms.
-We can define
-
-$$
-P_2 = \textrm{move_arms}(P_1, \Delta l)
-$$
-
-This function is implemented by finding the roots of
-
-$$
-|q| - 1 = 0
-$$
-
-and
-
-$$
-|\mathbf{o}_i - \mathbf{a}_i| - l_i = 0
-$$
-
-where $$i$$ is the arm index, $$\mathbf{o}_i$$ is the arm origin, $$\mathbf{a}_i$$ is the arm-tool connection point, and $$l_i$$ is the arm length.
 
 ## description of operation
 
