@@ -5,6 +5,7 @@ title: newton raphson method
 # newton raphson method
 
 * [example 1](example_01)
+* [example 2](example_02)
 
 $$
 x:f(x)=0
