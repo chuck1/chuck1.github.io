@@ -58,7 +58,7 @@ we can combine the equations for individual hyperplanes into a single matrix-vec
 
 $$\mathbf{B} \mathbf{x} = \mathbf{d}$$
 
-where $$\mathbf{B}$$ is a $$k$$-by-$$n$$ matrix, $$\mathbf{x}$$ is the position vector and $$\mathbf{d}$$ is a $$k$$-vector.
+where $$\mathbf{B}$$ is a $$(n-k)$$-by-$$n$$ matrix, $$\mathbf{x}$$ is the position vector and $$\mathbf{d}$$ is a $$(n-k)$$-vector.
 
 We want to convert this to the form
 
@@ -73,12 +73,11 @@ The columns of $$\mathbf{A}$$ are orthogonal basis vectors for the subspace.
 The matrix $$\mathbf{A}$$ can be calculated using a gaussian elimination algorithm. See an implementation 
 [here](https://github.com/chuck1/VS-4Dvis-1/blob/master/NMath/Include/nmath/linalg/MatFunctions.h).
 
-Keywords to research are
+### finding orthogonal basis vectors of a subspace
 
-* Nullspace
-* Matrix Kernel
-* Vector space basis
-* Gram-Schmidt Process
+Perform gaussian elimination of $$B^T$$ and the n-identity matrix.
+
+Take the transpose of the modified identity matrix and then take the last $$k$$ columns.
 
 ## Intersection of a Ray and a Hyperplane
 
