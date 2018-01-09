@@ -1,0 +1,87 @@
+---
+---
+digraph {
+rankdir="LR";
+
+iron_ore -> iron_plate
+
+copper_ore -> copper_plate
+
+copper_plate -> copper_cable
+
+iron_plate -> electronic_circuit
+copper_cable -> electronic_circuit
+
+crude_oil -> oil_processing
+//oil_processing -> heavy_oil
+//oil_processing -> light_oil
+//oil_processing -> petroleum
+
+coal -> plastic_bar
+oil_processing -> plastic_bar
+
+electronic_circuit -> advanced_circuit
+copper_cable -> advanced_circuit
+plastic_bar -> advanced_circuit
+
+advanced_circuit -> hub
+
+iron_plate -> iron_gear_wheel
+
+copper_plate -> science_pack_1
+iron_gear_wheel -> science_pack_1
+
+iron_plate -> transport_belt
+iron_gear_wheel -> transport_belt
+
+iron_plate -> inserter
+iron_gear_wheel -> inserter
+electronic_circuit -> inserter
+
+inserter -> science_pack_2
+transport_belt -> science_pack_2
+
+iron_plate -> steel_plate
+
+iron_plate -> pipe
+
+iron_gear_wheel -> engine_unit
+pipe -> engine_unit
+steel_plate -> engine_unit
+
+advanced_circuit -> science_pack_3
+electric_mining_drill -> science_pack_3
+engine_unit -> science_pack_3
+
+iron_plate -> fast_inserter
+electronic_circuit -> fast_inserter
+inserter -> fast_inserter
+
+iron_gear_wheel -> stack_inserter
+electronic_circuit -> stack_inserter
+advanced_circuit -> stack_inserter
+fast_inserter -> stack_inserter
+
+science_pack_1 -> research
+science_pack_2 -> research
+science_pack_3 -> research
+military_science_pack -> research
+production_science_pack -> research
+high_tech_science_pack -> research
+rocket_center -> research
+
+electric_mining_drill -> hub
+stack_inserter -> hub
+
+uranium -> nuclear_center
+
+nuclear_center -> hub
+
+hub -> research [style="dashed";constraint=false;]
+
+{rank=same; stone; iron_ore; copper_ore; coal; crude_oil; uranium}
+
+}
+
+
+
