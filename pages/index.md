@@ -6,4 +6,5 @@ layout: default
 * [literature](literature)
 * [manuals](manuals)
 * [projects](projects)
+* [gaming](gaming)
 

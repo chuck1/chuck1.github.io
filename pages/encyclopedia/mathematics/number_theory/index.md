@@ -5,6 +5,8 @@ title: Number Theory
 
 # Number Theory
 
+* [compression problem](compression)
+
 ## theorem 1
 
 Consider the equation of the natural numbers
