@@ -1,0 +1,141 @@
+---
+---
+
+digraph {
+	rankdir=LR;
+
+	{
+		factory_u_1_u_merge;
+		factory_u_1_d_merge;
+	}
+
+	{
+		rank="min";
+		upstream_d_1 [label="main line"];
+		upstream_d_2 [label="main line"];
+		upstream_u_1 [label="main line"];
+		upstream_u_2 [label="main line"];
+	}
+
+	{
+		rank="same";
+		merge_u_u_1 [label="";shape="circle"];
+		merge_u_d_1 [label="";shape="circle"];
+	}
+
+	{
+		rank="same";
+		wait_u_u_01 [label="wait"];
+		wait_u_u_02 [label="wait"];
+		wait_u_u_03 [label="wait"];
+		wait_u_u_04 [label="wait"];
+
+		wait_u_d_01 [label="wait"];
+		wait_u_d_02 [label="wait"];
+		wait_u_d_03 [label="wait"];
+		wait_u_d_04 [label="wait"];
+	}
+
+	merge_upstream_2 [label="";shape="circle"];
+
+	factory_u_1 -> factory_u_1_d_merge;
+	factory_u_1 -> factory_u_1_d_merge;
+	factory_u_1 -> factory_u_1_u_merge [dir=back];
+	factory_u_1 -> factory_u_1_u_merge [dir=back];
+	
+	factory_u_2 -> factory_u_2_d_merge;
+	factory_u_2 -> factory_u_2_d_merge;
+	factory_u_2 -> factory_u_2_u_merge [dir=back];
+	factory_u_2 -> factory_u_2_u_merge [dir=back];
+	
+	factory_u_1_d_merge -> factory_u_1_d_wait_1;
+	factory_u_1_d_merge -> factory_u_1_d_wait_2;
+	factory_u_1_d_merge -> factory_u_1_d_wait_3;
+	factory_u_1_d_merge -> factory_u_1_d_wait_4;
+
+	factory_u_1_u_merge -> factory_u_1_u_wait_1 [dir=back];
+	factory_u_1_u_merge -> factory_u_1_u_wait_2 [dir=back];
+	factory_u_1_u_merge -> factory_u_1_u_wait_3 [dir=back];
+	factory_u_1_u_merge -> factory_u_1_u_wait_4 [dir=back];
+
+
+
+	upstream_d_1 -> merge_u_d_1;
+	upstream_d_2 -> merge_u_d_1;
+
+	merge_u_u_1 -> upstream_u_1 [dir=forward];
+	merge_u_u_1 -> upstream_u_2 [dir=forward];
+
+	merge_upstream_2 -> wait_u_u_01 -> merge_u_u_1;
+	merge_upstream_2 -> wait_u_u_02 -> merge_u_u_1;
+	merge_upstream_2 -> wait_u_u_03 -> merge_u_u_1;
+	merge_upstream_2 -> wait_u_u_04 -> merge_u_u_1;
+
+	merge_u_d_1 -> wait_u_d_01 -> merge_upstream_2;
+	merge_u_d_1 -> wait_u_d_02 -> merge_upstream_2;
+	merge_u_d_1 -> wait_u_d_03 -> merge_upstream_2;
+	merge_u_d_1 -> wait_u_d_04 -> merge_upstream_2;
+
+
+
+	merge_upstream_2 -> subfactory_1 -> merge_downstream_2 [dir=none];
+	merge_upstream_2 -> subfactory_2 -> merge_downstream_2 [dir=none];
+	merge_upstream_2 -> subfactory_3 -> merge_downstream_2 [dir=none];
+	merge_upstream_2 -> subfactory_4 -> merge_downstream_2 [dir=none];
+
+
+	merge_d_u_1 -> wait_d_u_01 -> merge_downstream_2;
+	merge_d_u_1 -> wait_d_u_02 -> merge_downstream_2;
+	merge_d_u_1 -> wait_d_u_03 -> merge_downstream_2;
+	merge_d_u_1 -> wait_d_u_04 -> merge_downstream_2;
+
+	merge_downstream_2 -> wait_d_d_01 -> merge_d_d_1;
+	merge_downstream_2 -> wait_d_d_02 -> merge_d_d_1;
+	merge_downstream_2 -> wait_d_d_03 -> merge_d_d_1;
+	merge_downstream_2 -> wait_d_d_04 -> merge_d_d_1;
+
+	{
+		rank="same";
+		wait_d_u_01 [label="wait"];
+		wait_d_u_02 [label="wait"];
+		wait_d_u_03 [label="wait"];
+		wait_d_u_04 [label="wait"];
+
+		wait_d_d_01 [label="wait"];
+		wait_d_d_02 [label="wait"];
+		wait_d_d_03 [label="wait"];
+		wait_d_d_04 [label="wait"];
+	}
+
+	downstream_u_1 -> merge_d_u_1 [dir=forward];
+	downstream_u_2 -> merge_d_u_1 [dir=forward];
+
+	merge_d_d_1 -> downstream_d_1 [dir=forward];
+	merge_d_d_1 -> downstream_d_2 [dir=forward];
+
+	{
+		rank="same";
+		merge_d_u_1 [label="";shape="circle"];
+		merge_d_d_1 [label="";shape="circle"];
+	}
+
+
+	merge_downstream_2 [label="";shape="circle"];
+
+	{
+		rank="max";
+		downstream_d_1 [label="main line"];
+		downstream_d_2 [label="main line"];
+		downstream_u_1 [label="main line"];
+		downstream_u_2 [label="main line"];
+	}
+
+
+	merge_upstream_2 -> merge_downstream_2 [dir=none];
+
+	/*merge_upstream_1 -> merge_upstream_2 -> merge_downstream_2 -> merge_downstream_1;*/
+
+	merge_upstream_2 -> supply_stop -> merge_downstream_2 [dir=none]
+
+}
+
