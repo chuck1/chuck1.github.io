@@ -11,9 +11,8 @@ layout: default
   * clone source repository, edit source files directly, commit changes
 * multiple user support, page read and write permissions
 * three ways to deploy
-  * serverless (such as aws lambda
+  * serverless (such as aws lambda)
   * regular persistent server
-  * compile static pages with command line tool and deploy static pages
-
+  * compile static pages with command line tool and deploy static pages however you want
 
 
