@@ -2,6 +2,6 @@
 layout: default
 ---
 
- * [mathematics](mathematics)
+ * [mathematics](mathematics/index.html)
  * [physics](physics)
 
